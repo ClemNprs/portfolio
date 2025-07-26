@@ -1,0 +1,11 @@
+hotel_id,nom_hotel,type,pays,region,montant_facture,date_facture,date_echeance,date_paiement,relance_1,relance_2,statut_paiement,desactive,litige,jours_de_retard,montant_du,coeff_type,score_priorite
+H0453,Dunlap and Sons,Indépendant,Inde,Asie,4481.36,2025-03-31,2025-04-30,,2025-05-05,2025-05-15,En retard,True,False,82,4481.36,1.5,551207.2799999999
+H0081,Skinner Ltd,Indépendant,Inde,Asie,4496.32,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,False,False,79,4496.32,1.5,532813.9199999999
+H0155,Alvarez and Sons,Indépendant,Japon,Asie,4893.85,2025-04-14,2025-05-14,,2025-05-19,2025-05-29,En retard,True,False,68,4893.85,1.5,499172.70000000007
+H0172,Walton LLC,Indépendant,Thaïlande,Asie,4129.84,2025-04-07,2025-05-07,,2025-05-12,2025-05-22,En retard,True,False,75,4129.84,1.5,464607.0
+H0220,Vasquez-Donaldson,Indépendant,Inde,Asie,3796.78,2025-04-06,2025-05-06,,2025-05-11,2025-05-21,En retard,False,False,76,3796.78,1.5,432832.92000000004
+H0181,Park PLC,Chaîne,Espagne,Europe,4945.22,2025-03-26,2025-04-25,,2025-04-30,2025-05-10,En retard,True,False,87,4945.22,1.0,430234.14
+H0449,"Bowers, Fisher and Thompson",Indépendant,Mexique,Amérique du Nord,3504.05,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,False,False,80,3504.05,1.5,420486.0
+H0165,"Lowe, Gordon and Alvarez",Indépendant,Allemagne,Europe,3421.05,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,True,False,80,3421.05,1.5,410526.0
+H0455,Colon-Ho,Chaîne,Italie,Europe,4978.9,2025-04-01,2025-05-01,,2025-05-06,2025-05-16,En retard,False,True,81,4978.9,1.0,403290.89999999997
+H0240,"Thornton, Miller and Vega",Indépendant,Corée du Sud,Asie,4831.42,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,True,False,54,4831.42,1.5,391345.02

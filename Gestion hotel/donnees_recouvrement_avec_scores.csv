@@ -1,0 +1,501 @@
+hotel_id,nom_hotel,type,pays,region,montant_facture,date_facture,date_echeance,date_paiement,relance_1,relance_2,statut_paiement,desactive,litige,jours_de_retard,montant_du,coeff_type,score_priorite
+H0001,Davis Inc,Chaîne,Japon,Asie,3733.6,2025-06-17,2025-07-17,2025-07-15,2025-07-22,2025-08-01,Payé,False,False,0,0.0,1.0,0.0
+H0002,"Roberts, Carson and Smith",Chaîne,Japon,Asie,2993.41,2025-04-11,2025-05-11,2025-05-06,2025-05-16,2025-05-26,Payé,False,False,0,0.0,1.0,0.0
+H0003,"Glass, Stephens and Moore",Chaîne,Allemagne,Europe,2850.1,2025-04-11,2025-05-11,,2025-05-16,2025-05-26,En retard,False,True,71,2850.1,1.0,202357.1
+H0004,"Palmer, Quinn and Ruiz",Indépendant,Mexique,Amérique du Nord,4066.21,2025-06-19,2025-07-19,2025-07-19,2025-07-24,2025-08-03,Payé,False,False,0,0.0,1.5,0.0
+H0005,Morgan Ltd,Indépendant,Inde,Asie,1461.57,2025-05-01,2025-05-31,2025-07-08,2025-06-05,2025-06-15,Payé,False,False,38,0.0,1.5,0.0
+H0006,Lee-Miller,Chaîne,États-Unis,Amérique du Nord,1961.64,2025-05-18,2025-06-17,2025-06-29,2025-06-22,2025-07-02,Payé,False,False,12,0.0,1.0,0.0
+H0007,Riley-Simon,Chaîne,Thaïlande,Asie,3675.69,2025-04-22,2025-05-22,2025-06-05,2025-05-27,2025-06-06,Payé,False,False,14,0.0,1.0,0.0
+H0008,Farmer Ltd,Indépendant,Belgique,Europe,4164.08,2025-03-26,2025-04-25,2025-05-08,2025-04-30,2025-05-10,Payé,False,False,13,0.0,1.5,0.0
+H0009,"Harris, Campbell and Parker",Chaîne,Corée du Sud,Asie,324.54,2025-06-10,2025-07-10,2025-07-18,2025-07-15,2025-07-25,Payé,False,False,8,0.0,1.0,0.0
+H0010,Garrison-Kelly,Chaîne,Allemagne,Europe,1962.62,2025-04-15,2025-05-15,2025-05-28,2025-05-20,2025-05-30,Payé,False,False,13,0.0,1.0,0.0
+H0011,Day-Garcia,Indépendant,Espagne,Europe,1126.58,2025-04-25,2025-05-25,2025-06-27,2025-05-30,2025-06-09,Payé,False,False,33,0.0,1.5,0.0
+H0012,"Goodwin, Shields and Gomez",Chaîne,Japon,Asie,2717.29,2025-03-25,2025-04-24,2025-05-13,2025-04-29,2025-05-09,Payé,False,False,19,0.0,1.0,0.0
+H0013,"Walter, Payne and Hunter",Chaîne,Canada,Amérique du Nord,3454.61,2025-04-24,2025-05-24,,2025-05-29,2025-06-08,En retard,True,False,58,3454.61,1.0,200367.38
+H0014,Martinez Inc,Indépendant,France,Europe,2065.71,2025-05-02,2025-06-01,2025-06-27,2025-06-06,2025-06-16,Payé,False,False,26,0.0,1.5,0.0
+H0015,Matthews Group,Chaîne,Thaïlande,Asie,3311.65,2025-05-26,2025-06-25,2025-07-26,2025-06-30,2025-07-10,En retard,False,True,31,3311.65,1.0,102661.15000000001
+H0016,Hanna PLC,Chaîne,États-Unis,Amérique du Nord,3750.45,2025-04-03,2025-05-03,2025-06-09,2025-05-08,2025-05-18,Payé,False,False,37,0.0,1.0,0.0
+H0017,"Washington, Richardson and Jones",Indépendant,Inde,Asie,1873.78,2025-04-12,2025-05-12,,2025-05-17,2025-05-27,En retard,True,False,70,1873.78,1.5,196746.90000000002
+H0018,"Peterson, Patel and Salinas",Chaîne,Inde,Asie,3803.33,2025-04-24,2025-05-24,,2025-05-29,2025-06-08,En retard,True,False,58,3803.33,1.0,220593.13999999998
+H0019,"Ward, Davis and Meyer",Indépendant,Corée du Sud,Asie,3022.4,2025-03-27,2025-04-26,2025-05-24,2025-05-01,2025-05-11,Payé,False,False,28,0.0,1.5,0.0
+H0020,"Dalton, Martinez and Ford",Indépendant,Mexique,Amérique du Nord,4858.28,2025-06-01,2025-07-01,,2025-07-06,2025-07-16,En retard,True,False,20,4858.28,1.5,145748.4
+H0021,Byrd-Rocha,Indépendant,Japon,Asie,3866.13,2025-06-14,2025-07-14,2025-07-22,2025-07-19,2025-07-29,En retard,False,True,8,3866.13,1.5,46393.56
+H0022,"Compton, Sosa and Brady",Indépendant,États-Unis,Amérique du Nord,4862.25,2025-05-05,2025-06-04,,2025-06-09,2025-06-19,En retard,True,False,47,4862.25,1.5,342788.625
+H0023,"Phelps, West and Gentry",Chaîne,Thaïlande,Asie,848.91,2025-04-15,2025-05-15,,2025-05-20,2025-05-30,En retard,True,False,67,848.91,1.0,56876.97
+H0024,Maldonado and Sons,Indépendant,Thaïlande,Asie,195.44,2025-04-18,2025-05-18,,2025-05-23,2025-06-02,En retard,False,True,64,195.44,1.5,18762.239999999998
+H0025,Davis Group,Chaîne,Allemagne,Europe,519.7,2025-04-17,2025-05-17,2025-05-11,2025-05-22,2025-06-01,Payé,False,False,0,0.0,1.0,0.0
+H0026,Pham Inc,Chaîne,Corée du Sud,Asie,3332.78,2025-05-27,2025-06-26,,2025-07-01,2025-07-11,En retard,True,False,25,3332.78,1.0,83319.5
+H0027,Smith-Harrison,Indépendant,Mexique,Amérique du Nord,4825.38,2025-05-09,2025-06-08,,2025-06-13,2025-06-23,En retard,True,False,43,4825.38,1.5,311237.01
+H0028,Reynolds-Bradshaw,Indépendant,Thaïlande,Asie,4976.23,2025-06-14,2025-07-14,2025-08-01,2025-07-19,2025-07-29,En retard,False,True,18,4976.23,1.5,134358.20999999996
+H0029,Davis Group,Chaîne,Allemagne,Europe,1756.62,2025-03-23,2025-04-22,2025-04-26,2025-04-27,2025-05-07,Payé,False,False,4,0.0,1.0,0.0
+H0030,West LLC,Chaîne,Corée du Sud,Asie,447.87,2025-03-29,2025-04-28,2025-05-02,2025-05-03,2025-05-13,Payé,False,False,4,0.0,1.0,0.0
+H0031,Ortiz-Campbell,Indépendant,France,Europe,447.2,2025-05-18,2025-06-17,2025-07-19,2025-06-22,2025-07-02,Payé,False,False,32,0.0,1.5,0.0
+H0032,Fleming-Huff,Chaîne,États-Unis,Amérique du Nord,3644.43,2025-05-28,2025-06-27,,2025-07-02,2025-07-12,En retard,False,True,24,3644.43,1.0,87466.31999999999
+H0033,Santana and Sons,Chaîne,Canada,Amérique du Nord,562.2,2025-05-16,2025-06-15,2025-06-27,2025-06-20,2025-06-30,Payé,False,False,12,0.0,1.0,0.0
+H0034,Fox-Gardner,Indépendant,Canada,Amérique du Nord,4332.8,2025-05-06,2025-06-05,2025-07-06,2025-06-10,2025-06-20,Payé,False,False,31,0.0,1.5,0.0
+H0035,"Lowery, Simpson and Washington",Chaîne,Japon,Asie,2072.84,2025-05-27,2025-06-26,2025-06-22,2025-07-01,2025-07-11,Payé,False,False,0,0.0,1.0,0.0
+H0036,Palmer-Browning,Chaîne,Allemagne,Europe,2727.8,2025-03-25,2025-04-24,2025-04-25,2025-04-29,2025-05-09,Payé,False,False,1,0.0,1.0,0.0
+H0037,Pennington-Williams,Chaîne,Canada,Amérique du Nord,4384.98,2025-03-23,2025-04-22,2025-05-17,2025-04-27,2025-05-07,Payé,False,False,25,0.0,1.0,0.0
+H0038,"Hayes, Villa and Lawrence",Chaîne,France,Europe,4848.08,2025-04-30,2025-05-30,,2025-06-04,2025-06-14,En retard,True,False,52,4848.08,1.0,252100.16
+H0039,"Gomez, Adams and Baker",Indépendant,Italie,Europe,2458.66,2025-06-08,2025-07-08,,2025-07-13,2025-07-23,En retard,True,False,13,2458.66,1.5,47943.869999999995
+H0040,"Young, Lewis and Russell",Chaîne,Italie,Europe,4928.01,2025-04-25,2025-05-25,2025-07-04,2025-05-30,2025-06-09,Payé,False,False,40,0.0,1.0,0.0
+H0041,Nelson PLC,Indépendant,Canada,Amérique du Nord,3513.3,2025-06-03,2025-07-03,,2025-07-08,2025-07-18,En retard,False,True,18,3513.3,1.5,94859.1
+H0042,"Thompson, Underwood and Mays",Chaîne,Espagne,Europe,4846.68,2025-04-04,2025-05-04,2025-05-28,2025-05-09,2025-05-19,Payé,False,False,24,0.0,1.0,0.0
+H0043,Harper-Cobb,Chaîne,Espagne,Europe,345.7,2025-04-22,2025-05-22,2025-06-14,2025-05-27,2025-06-06,Payé,False,False,23,0.0,1.0,0.0
+H0044,Olsen and Sons,Chaîne,France,Europe,4271.58,2025-05-29,2025-06-28,2025-06-22,2025-07-03,2025-07-13,Payé,False,False,0,0.0,1.0,0.0
+H0045,Lee-Wheeler,Indépendant,Corée du Sud,Asie,687.44,2025-04-09,2025-05-09,,2025-05-14,2025-05-24,En retard,True,False,73,687.44,1.5,75274.68000000001
+H0046,Curtis Inc,Chaîne,Japon,Asie,2154.2,2025-05-31,2025-06-30,2025-07-23,2025-07-05,2025-07-15,En retard,False,False,23,2154.2,1.0,49546.6
+H0047,Armstrong-Kline,Chaîne,Espagne,Europe,1401.51,2025-05-20,2025-06-19,2025-07-20,2025-06-24,2025-07-04,Payé,False,False,31,0.0,1.0,0.0
+H0048,"Riley, Golden and Parrish",Indépendant,Canada,Amérique du Nord,4652.19,2025-06-03,2025-07-03,,2025-07-08,2025-07-18,En retard,True,False,18,4652.19,1.5,125609.13
+H0049,"Wu, Carpenter and Jefferson",Chaîne,Mexique,Amérique du Nord,458.98,2025-05-29,2025-06-28,2025-07-04,2025-07-03,2025-07-13,Payé,False,False,6,0.0,1.0,0.0
+H0050,"Calhoun, Jones and James",Chaîne,Espagne,Europe,4408.42,2025-04-28,2025-05-28,2025-05-28,2025-06-02,2025-06-12,Payé,False,False,0,0.0,1.0,0.0
+H0051,"Sanders, Shah and King",Indépendant,Mexique,Amérique du Nord,3097.22,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,True,False,80,3097.22,1.5,371666.39999999997
+H0052,"Ortiz, Brown and Castro",Chaîne,Thaïlande,Asie,4700.76,2025-03-28,2025-04-27,2025-04-24,2025-05-02,2025-05-12,Payé,False,False,0,0.0,1.0,0.0
+H0053,"Ross, Murray and Miller",Chaîne,Belgique,Europe,1434.51,2025-05-23,2025-06-22,2025-07-27,2025-06-27,2025-07-07,En retard,False,True,35,1434.51,1.0,50207.85
+H0054,Stevens-Edwards,Indépendant,Thaïlande,Asie,1330.49,2025-05-16,2025-06-15,,2025-06-20,2025-06-30,En retard,True,False,36,1330.49,1.5,71846.45999999999
+H0055,"Roberts, Meyer and Davis",Indépendant,Italie,Europe,316.03,2025-06-20,2025-07-20,2025-07-18,2025-07-25,2025-08-04,Payé,False,False,0,0.0,1.5,0.0
+H0056,"Lowery, Hall and Nelson",Chaîne,Thaïlande,Asie,3732.03,2025-05-06,2025-06-05,2025-06-22,2025-06-10,2025-06-20,Payé,False,False,17,0.0,1.0,0.0
+H0057,Johnson-Vasquez,Chaîne,Japon,Asie,468.69,2025-05-10,2025-06-09,,2025-06-14,2025-06-24,En retard,True,False,42,468.69,1.0,19684.98
+H0058,Barrera-Hale,Indépendant,Japon,Asie,2954.3,2025-04-13,2025-05-13,2025-05-11,2025-05-18,2025-05-28,Payé,False,False,0,0.0,1.5,0.0
+H0059,Snyder-Jones,Indépendant,Espagne,Europe,4505.01,2025-04-30,2025-05-30,,2025-06-04,2025-06-14,En retard,True,False,52,4505.01,1.5,351390.78
+H0060,Jones PLC,Chaîne,États-Unis,Amérique du Nord,3367.97,2025-05-31,2025-06-30,2025-07-25,2025-07-05,2025-07-15,En retard,False,True,25,3367.97,1.0,84199.25
+H0061,Santos-Pennington,Chaîne,Allemagne,Europe,4418.94,2025-04-04,2025-05-04,2025-06-10,2025-05-09,2025-05-19,Payé,False,False,37,0.0,1.0,0.0
+H0062,Anderson Group,Chaîne,Canada,Amérique du Nord,1407.35,2025-06-17,2025-07-17,,2025-07-22,2025-08-01,En retard,True,False,4,1407.35,1.0,5629.4
+H0063,"Wright, Montes and Nguyen",Indépendant,États-Unis,Amérique du Nord,1189.93,2025-05-20,2025-06-19,,2025-06-24,2025-07-04,En retard,False,False,32,1189.93,1.5,57116.64
+H0064,"Sheppard, Anderson and Rose",Chaîne,États-Unis,Amérique du Nord,215.96,2025-05-27,2025-06-26,2025-07-07,2025-07-01,2025-07-11,Payé,False,False,11,0.0,1.0,0.0
+H0065,"White, Anderson and Garcia",Indépendant,États-Unis,Amérique du Nord,1820.62,2025-04-27,2025-05-27,2025-06-29,2025-06-01,2025-06-11,Payé,False,False,33,0.0,1.5,0.0
+H0066,Robinson PLC,Chaîne,Thaïlande,Asie,665.17,2025-06-01,2025-07-01,,2025-07-06,2025-07-16,En retard,True,False,20,665.17,1.0,13303.4
+H0067,"Payne, Frederick and Griffin",Chaîne,Thaïlande,Asie,631.17,2025-05-18,2025-06-17,2025-07-23,2025-06-22,2025-07-02,En retard,False,False,36,631.17,1.0,22722.12
+H0068,"Mann, Gates and Garcia",Indépendant,Japon,Asie,4507.57,2025-06-18,2025-07-18,2025-07-10,2025-07-23,2025-08-02,Payé,False,False,0,0.0,1.5,0.0
+H0069,Davis PLC,Chaîne,Inde,Asie,2647.61,2025-04-24,2025-05-24,,2025-05-29,2025-06-08,En retard,True,False,58,2647.61,1.0,153561.38
+H0070,Brown LLC,Chaîne,Canada,Amérique du Nord,4749.48,2025-05-06,2025-06-05,,2025-06-10,2025-06-20,En retard,False,True,46,4749.48,1.0,218476.08
+H0071,"Wagner, Wagner and Harris",Indépendant,Thaïlande,Asie,3367.78,2025-06-18,2025-07-18,2025-08-21,2025-07-23,2025-08-02,En retard,False,True,34,3367.78,1.5,171756.78
+H0072,"Pugh, Weber and Mays",Indépendant,Italie,Europe,3418.86,2025-06-14,2025-07-14,,2025-07-19,2025-07-29,En retard,False,False,7,3418.86,1.5,35898.03
+H0073,Vaughn-Reed,Indépendant,Japon,Asie,1505.88,2025-05-25,2025-06-24,2025-07-21,2025-06-29,2025-07-09,Payé,False,False,27,0.0,1.5,0.0
+H0074,"Johnson, Cox and Velez",Indépendant,Thaïlande,Asie,2264.75,2025-03-24,2025-04-23,2025-05-15,2025-04-28,2025-05-08,Payé,False,False,22,0.0,1.5,0.0
+H0075,"Griffith, Johnson and Aguilar",Chaîne,Mexique,Amérique du Nord,3328.37,2025-06-10,2025-07-10,2025-08-11,2025-07-15,2025-07-25,En retard,False,True,32,3328.37,1.0,106507.84
+H0076,Miller-Ortiz,Chaîne,Espagne,Europe,4052.16,2025-06-02,2025-07-02,2025-06-24,2025-07-07,2025-07-17,Payé,False,False,0,0.0,1.0,0.0
+H0077,Barber-Cruz,Chaîne,Italie,Europe,2331.54,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,True,False,79,2331.54,1.0,184191.66
+H0078,Butler PLC,Indépendant,Inde,Asie,2058.3,2025-05-21,2025-06-20,2025-07-24,2025-06-25,2025-07-05,En retard,True,False,34,2058.3,1.5,104973.30000000002
+H0079,Garcia PLC,Chaîne,Italie,Europe,961.84,2025-04-22,2025-05-22,,2025-05-27,2025-06-06,En retard,False,True,60,961.84,1.0,57710.4
+H0080,Goodman-Conner,Chaîne,Corée du Sud,Asie,2336.66,2025-04-17,2025-05-17,,2025-05-22,2025-06-01,En retard,False,False,65,2336.66,1.0,151882.9
+H0081,Skinner Ltd,Indépendant,Inde,Asie,4496.32,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,False,False,79,4496.32,1.5,532813.9199999999
+H0082,"Mccann, Sanders and Dickerson",Indépendant,États-Unis,Amérique du Nord,3852.49,2025-05-18,2025-06-17,2025-07-17,2025-06-22,2025-07-02,Payé,False,False,30,0.0,1.5,0.0
+H0083,Nguyen PLC,Indépendant,Espagne,Europe,479.67,2025-04-04,2025-05-04,2025-05-11,2025-05-09,2025-05-19,Payé,False,False,7,0.0,1.5,0.0
+H0084,Alvarado-Neal,Chaîne,Canada,Amérique du Nord,778.03,2025-06-07,2025-07-07,2025-08-10,2025-07-12,2025-07-22,En retard,True,False,34,778.03,1.0,26453.02
+H0085,"Camacho, Lambert and Carter",Chaîne,Corée du Sud,Asie,2132.85,2025-03-25,2025-04-24,2025-05-13,2025-04-29,2025-05-09,Payé,False,False,19,0.0,1.0,0.0
+H0086,Payne-Mack,Chaîne,États-Unis,Amérique du Nord,4181.17,2025-05-26,2025-06-25,2025-08-03,2025-06-30,2025-07-10,En retard,True,False,39,4181.17,1.0,163065.63
+H0087,Larsen-Jennings,Indépendant,Inde,Asie,128.89,2025-05-27,2025-06-26,2025-08-03,2025-07-01,2025-07-11,En retard,False,False,38,128.89,1.5,7346.73
+H0088,Barker Ltd,Indépendant,Corée du Sud,Asie,1175.17,2025-04-20,2025-05-20,2025-05-11,2025-05-25,2025-06-04,Payé,False,False,0,0.0,1.5,0.0
+H0089,Hudson LLC,Indépendant,Canada,Amérique du Nord,3648.49,2025-04-30,2025-05-30,,2025-06-04,2025-06-14,En retard,True,False,52,3648.49,1.5,284582.22
+H0090,"Ware, Kim and Huff",Indépendant,Japon,Asie,3000.27,2025-05-30,2025-06-29,2025-06-24,2025-07-04,2025-07-14,Payé,False,False,0,0.0,1.5,0.0
+H0091,"Pearson, Burch and Cummings",Chaîne,Inde,Asie,4347.57,2025-04-26,2025-05-26,2025-06-01,2025-05-31,2025-06-10,Payé,False,False,6,0.0,1.0,0.0
+H0092,Gray-Frey,Chaîne,Canada,Amérique du Nord,2328.03,2025-06-18,2025-07-18,2025-08-01,2025-07-23,2025-08-02,En retard,False,False,14,2328.03,1.0,32592.420000000002
+H0093,Austin-Madden,Indépendant,États-Unis,Amérique du Nord,194.98,2025-06-01,2025-07-01,2025-07-13,2025-07-06,2025-07-16,Payé,False,False,12,0.0,1.5,0.0
+H0094,Adams LLC,Chaîne,France,Europe,3795.74,2025-05-25,2025-06-24,,2025-06-29,2025-07-09,En retard,True,False,27,3795.74,1.0,102484.98
+H0095,"Gonzalez, Waters and Beard",Chaîne,Belgique,Europe,1268.87,2025-05-27,2025-06-26,2025-06-23,2025-07-01,2025-07-11,Payé,False,False,0,0.0,1.0,0.0
+H0096,Petty-Gray,Indépendant,Corée du Sud,Asie,3527.38,2025-05-09,2025-06-08,,2025-06-13,2025-06-23,En retard,True,False,43,3527.38,1.5,227516.01
+H0097,Clark LLC,Chaîne,Japon,Asie,4827.13,2025-03-29,2025-04-28,2025-04-19,2025-05-03,2025-05-13,Payé,False,False,0,0.0,1.0,0.0
+H0098,Blake LLC,Indépendant,Mexique,Amérique du Nord,2043.61,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,True,False,54,2043.61,1.5,165532.40999999997
+H0099,Castro Ltd,Chaîne,Corée du Sud,Asie,3516.25,2025-04-18,2025-05-18,2025-06-20,2025-05-23,2025-06-02,Payé,False,False,33,0.0,1.0,0.0
+H0100,Fitzgerald and Sons,Chaîne,Japon,Asie,1801.3,2025-03-29,2025-04-28,2025-05-11,2025-05-03,2025-05-13,Payé,False,False,13,0.0,1.0,0.0
+H0101,Jimenez PLC,Indépendant,Belgique,Europe,162.0,2025-04-25,2025-05-25,2025-06-15,2025-05-30,2025-06-09,Payé,False,False,21,0.0,1.5,0.0
+H0102,Williams-Bray,Indépendant,Italie,Europe,3214.37,2025-04-09,2025-05-09,,2025-05-14,2025-05-24,En retard,True,False,73,3214.37,1.5,351973.51499999996
+H0103,Reynolds PLC,Indépendant,États-Unis,Amérique du Nord,3117.97,2025-05-18,2025-06-17,,2025-06-22,2025-07-02,En retard,False,False,34,3117.97,1.5,159016.47
+H0104,"Lewis, Ingram and Jones",Indépendant,Mexique,Amérique du Nord,1679.29,2025-04-14,2025-05-14,2025-05-09,2025-05-19,2025-05-29,Payé,False,False,0,0.0,1.5,0.0
+H0105,Smith-Mendez,Chaîne,Canada,Amérique du Nord,3777.33,2025-06-07,2025-07-07,2025-08-08,2025-07-12,2025-07-22,En retard,False,False,32,3777.33,1.0,120874.56
+H0106,Ayers-Hart,Indépendant,Italie,Europe,991.02,2025-05-16,2025-06-15,2025-06-21,2025-06-20,2025-06-30,Payé,False,False,6,0.0,1.5,0.0
+H0107,Medina-Cooper,Indépendant,Canada,Amérique du Nord,2823.38,2025-04-13,2025-05-13,2025-05-15,2025-05-18,2025-05-28,Payé,False,False,2,0.0,1.5,0.0
+H0108,"Reeves, Huang and Keller",Indépendant,Allemagne,Europe,2494.03,2025-04-01,2025-05-01,,2025-05-06,2025-05-16,En retard,False,False,81,2494.03,1.5,303024.645
+H0109,Prince PLC,Chaîne,États-Unis,Amérique du Nord,1541.75,2025-05-21,2025-06-20,2025-06-25,2025-06-25,2025-07-05,Payé,False,False,5,0.0,1.0,0.0
+H0110,"Vargas, Herman and Paul",Indépendant,Mexique,Amérique du Nord,2418.98,2025-03-23,2025-04-22,2025-05-09,2025-04-27,2025-05-07,Payé,False,False,17,0.0,1.5,0.0
+H0111,"Houston, Martin and Cline",Indépendant,Thaïlande,Asie,3543.99,2025-03-24,2025-04-23,2025-04-29,2025-04-28,2025-05-08,Payé,False,False,6,0.0,1.5,0.0
+H0112,Franklin-West,Chaîne,France,Europe,1646.18,2025-05-20,2025-06-19,,2025-06-24,2025-07-04,En retard,True,False,32,1646.18,1.0,52677.76
+H0113,Goodman Inc,Indépendant,Allemagne,Europe,1454.85,2025-04-20,2025-05-20,2025-06-27,2025-05-25,2025-06-04,Payé,False,False,38,0.0,1.5,0.0
+H0114,Vargas-Rice,Chaîne,Thaïlande,Asie,4179.88,2025-04-20,2025-05-20,2025-06-02,2025-05-25,2025-06-04,Payé,False,False,13,0.0,1.0,0.0
+H0115,Jones-Alexander,Chaîne,Espagne,Europe,3569.29,2025-03-23,2025-04-22,2025-04-14,2025-04-27,2025-05-07,Payé,False,False,0,0.0,1.0,0.0
+H0116,Maldonado-Brown,Indépendant,Belgique,Europe,3517.35,2025-04-18,2025-05-18,2025-06-25,2025-05-23,2025-06-02,Payé,False,False,38,0.0,1.5,0.0
+H0117,"Melton, Costa and Tanner",Chaîne,États-Unis,Amérique du Nord,2912.91,2025-04-23,2025-05-23,2025-06-10,2025-05-28,2025-06-07,Payé,False,False,18,0.0,1.0,0.0
+H0118,Evans Ltd,Chaîne,États-Unis,Amérique du Nord,1337.14,2025-05-08,2025-06-07,,2025-06-12,2025-06-22,En retard,True,False,44,1337.14,1.0,58834.16
+H0119,"Fisher, Kerr and Brown",Indépendant,Italie,Europe,463.0,2025-06-09,2025-07-09,2025-07-02,2025-07-14,2025-07-24,Payé,False,False,0,0.0,1.5,0.0
+H0120,Frazier-Holloway,Indépendant,Allemagne,Europe,517.39,2025-04-21,2025-05-21,2025-06-15,2025-05-26,2025-06-05,Payé,False,False,25,0.0,1.5,0.0
+H0121,Smith-Gibson,Chaîne,Mexique,Amérique du Nord,3900.9,2025-05-31,2025-06-30,2025-07-18,2025-07-05,2025-07-15,Payé,False,False,18,0.0,1.0,0.0
+H0122,Perez-Berry,Indépendant,Mexique,Amérique du Nord,1596.36,2025-05-06,2025-06-05,2025-07-04,2025-06-10,2025-06-20,Payé,False,False,29,0.0,1.5,0.0
+H0123,Martin-Robinson,Chaîne,Japon,Asie,3165.02,2025-06-02,2025-07-02,2025-06-27,2025-07-07,2025-07-17,Payé,False,False,0,0.0,1.0,0.0
+H0124,Roberts-Ortiz,Chaîne,Allemagne,Europe,2804.76,2025-05-12,2025-06-11,2025-06-27,2025-06-16,2025-06-26,Payé,False,False,16,0.0,1.0,0.0
+H0125,Kennedy PLC,Indépendant,Mexique,Amérique du Nord,1527.17,2025-04-13,2025-05-13,2025-06-17,2025-05-18,2025-05-28,Payé,False,False,35,0.0,1.5,0.0
+H0126,Velazquez Ltd,Indépendant,Mexique,Amérique du Nord,448.78,2025-06-18,2025-07-18,2025-07-24,2025-07-23,2025-08-02,En retard,True,False,6,448.78,1.5,4039.0199999999995
+H0127,"Taylor, Smith and Osborne",Chaîne,États-Unis,Amérique du Nord,3273.41,2025-05-18,2025-06-17,,2025-06-22,2025-07-02,En retard,True,False,34,3273.41,1.0,111295.94
+H0128,Taylor Ltd,Chaîne,France,Europe,3983.88,2025-04-17,2025-05-17,2025-06-12,2025-05-22,2025-06-01,Payé,False,False,26,0.0,1.0,0.0
+H0129,Dixon and Sons,Chaîne,Canada,Amérique du Nord,2396.62,2025-04-20,2025-05-20,2025-06-04,2025-05-25,2025-06-04,Payé,False,False,15,0.0,1.0,0.0
+H0130,"Brown, Hopkins and Miller",Indépendant,Mexique,Amérique du Nord,2245.02,2025-03-28,2025-04-27,2025-05-14,2025-05-02,2025-05-12,Payé,False,False,17,0.0,1.5,0.0
+H0131,Clark Group,Indépendant,Thaïlande,Asie,226.74,2025-04-04,2025-05-04,2025-06-06,2025-05-09,2025-05-19,Payé,False,False,33,0.0,1.5,0.0
+H0132,Miller Group,Indépendant,Japon,Asie,2923.61,2025-04-21,2025-05-21,,2025-05-26,2025-06-05,En retard,True,False,61,2923.61,1.5,267510.31500000006
+H0133,"Alexander, Ross and Duncan",Indépendant,Mexique,Amérique du Nord,4588.76,2025-05-24,2025-06-23,2025-07-20,2025-06-28,2025-07-08,Payé,False,False,27,0.0,1.5,0.0
+H0134,Herrera-Martin,Indépendant,Mexique,Amérique du Nord,4848.37,2025-03-27,2025-04-26,2025-05-12,2025-05-01,2025-05-11,Payé,False,False,16,0.0,1.5,0.0
+H0135,Howell-Roberts,Chaîne,Canada,Amérique du Nord,4302.89,2025-06-16,2025-07-16,2025-08-19,2025-07-21,2025-07-31,En retard,False,False,34,4302.89,1.0,146298.26
+H0136,Williams-Rivas,Chaîne,Inde,Asie,2328.65,2025-03-30,2025-04-29,2025-05-09,2025-05-04,2025-05-14,Payé,False,False,10,0.0,1.0,0.0
+H0137,Glass PLC,Chaîne,Italie,Europe,3322.54,2025-05-14,2025-06-13,2025-06-29,2025-06-18,2025-06-28,Payé,False,False,16,0.0,1.0,0.0
+H0138,Myers-Jackson,Indépendant,Allemagne,Europe,3150.91,2025-05-27,2025-06-26,2025-07-14,2025-07-01,2025-07-11,Payé,False,False,18,0.0,1.5,0.0
+H0139,George Inc,Indépendant,Allemagne,Europe,2791.18,2025-04-22,2025-05-22,,2025-05-27,2025-06-06,En retard,False,False,60,2791.18,1.5,251206.19999999998
+H0140,Howard Ltd,Chaîne,France,Europe,3577.94,2025-04-12,2025-05-12,2025-05-02,2025-05-17,2025-05-27,Payé,False,False,0,0.0,1.0,0.0
+H0141,Sherman Ltd,Chaîne,Inde,Asie,1201.03,2025-05-09,2025-06-08,,2025-06-13,2025-06-23,En retard,True,False,43,1201.03,1.0,51644.29
+H0142,Barnett-Thomas,Chaîne,États-Unis,Amérique du Nord,2542.04,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,False,False,79,2542.04,1.0,200821.16
+H0143,Ray LLC,Chaîne,Canada,Amérique du Nord,2338.25,2025-05-15,2025-06-14,2025-06-16,2025-06-19,2025-06-29,Payé,False,False,2,0.0,1.0,0.0
+H0144,"Peterson, Cruz and Cardenas",Chaîne,Corée du Sud,Asie,1453.61,2025-04-16,2025-05-16,,2025-05-21,2025-05-31,En retard,False,False,66,1453.61,1.0,95938.26
+H0145,Sanchez-Curtis,Chaîne,Thaïlande,Asie,1485.91,2025-04-22,2025-05-22,2025-06-18,2025-05-27,2025-06-06,Payé,False,False,27,0.0,1.0,0.0
+H0146,"Saunders, James and Turner",Chaîne,Inde,Asie,2288.08,2025-04-21,2025-05-21,2025-06-01,2025-05-26,2025-06-05,Payé,False,False,11,0.0,1.0,0.0
+H0147,"Macdonald, Contreras and Hall",Indépendant,Inde,Asie,4670.98,2025-05-11,2025-06-10,,2025-06-15,2025-06-25,En retard,True,False,41,4670.98,1.5,287265.27
+H0148,Vega PLC,Chaîne,Inde,Asie,4294.46,2025-06-04,2025-07-04,2025-07-14,2025-07-09,2025-07-19,Payé,False,False,10,0.0,1.0,0.0
+H0149,"Ortiz, Bartlett and Long",Indépendant,Inde,Asie,1991.79,2025-05-26,2025-06-25,2025-07-26,2025-06-30,2025-07-10,En retard,True,False,31,1991.79,1.5,92618.235
+H0150,Conrad-Francis,Chaîne,États-Unis,Amérique du Nord,2561.23,2025-05-04,2025-06-03,2025-05-30,2025-06-08,2025-06-18,Payé,False,False,0,0.0,1.0,0.0
+H0151,Baker Group,Indépendant,États-Unis,Amérique du Nord,175.2,2025-06-15,2025-07-15,2025-08-15,2025-07-20,2025-07-30,En retard,True,False,31,175.2,1.5,8146.799999999999
+H0152,Smith-Conley,Indépendant,Italie,Europe,1758.95,2025-05-20,2025-06-19,2025-07-20,2025-06-24,2025-07-04,Payé,False,False,31,0.0,1.5,0.0
+H0153,Bell LLC,Indépendant,Espagne,Europe,4775.28,2025-05-13,2025-06-12,2025-07-20,2025-06-17,2025-06-27,Payé,False,False,38,0.0,1.5,0.0
+H0154,Mckenzie-Calderon,Chaîne,Mexique,Amérique du Nord,3125.55,2025-06-14,2025-07-14,2025-08-16,2025-07-19,2025-07-29,En retard,False,True,33,3125.55,1.0,103143.15000000001
+H0155,Alvarez and Sons,Indépendant,Japon,Asie,4893.85,2025-04-14,2025-05-14,,2025-05-19,2025-05-29,En retard,True,False,68,4893.85,1.5,499172.70000000007
+H0156,"Mora, Moore and Curtis",Indépendant,États-Unis,Amérique du Nord,4526.78,2025-04-03,2025-05-03,2025-06-12,2025-05-08,2025-05-18,Payé,False,False,40,0.0,1.5,0.0
+H0157,Hall PLC,Indépendant,Espagne,Europe,1936.72,2025-05-30,2025-06-29,2025-07-22,2025-07-04,2025-07-14,En retard,False,True,23,1936.72,1.5,66816.84
+H0158,Rodriguez LLC,Chaîne,Allemagne,Europe,3086.51,2025-04-02,2025-05-02,2025-06-04,2025-05-07,2025-05-17,Payé,False,False,33,0.0,1.0,0.0
+H0159,Lawrence Group,Chaîne,Italie,Europe,1237.72,2025-06-15,2025-07-15,2025-08-03,2025-07-20,2025-07-30,En retard,False,True,19,1237.72,1.0,23516.68
+H0160,"Russo, Miles and Walker",Chaîne,Canada,Amérique du Nord,461.92,2025-05-04,2025-06-03,,2025-06-08,2025-06-18,En retard,False,False,48,461.92,1.0,22172.16
+H0161,Johnson PLC,Indépendant,Thaïlande,Asie,4241.99,2025-04-17,2025-05-17,2025-05-31,2025-05-22,2025-06-01,Payé,False,False,14,0.0,1.5,0.0
+H0162,Roach LLC,Chaîne,États-Unis,Amérique du Nord,1968.69,2025-06-19,2025-07-19,2025-07-27,2025-07-24,2025-08-03,En retard,False,True,8,1968.69,1.0,15749.52
+H0163,Watkins-Cortez,Indépendant,Inde,Asie,139.68,2025-04-26,2025-05-26,,2025-05-31,2025-06-10,En retard,True,False,56,139.68,1.5,11733.119999999999
+H0164,"Glover, Mendez and King",Indépendant,Inde,Asie,3901.13,2025-04-30,2025-05-30,2025-06-11,2025-06-04,2025-06-14,Payé,False,False,12,0.0,1.5,0.0
+H0165,"Lowe, Gordon and Alvarez",Indépendant,Allemagne,Europe,3421.05,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,True,False,80,3421.05,1.5,410526.0
+H0166,Lara Inc,Chaîne,Japon,Asie,1613.77,2025-03-25,2025-04-24,2025-05-21,2025-04-29,2025-05-09,Payé,False,False,27,0.0,1.0,0.0
+H0167,"Morris, Hess and Allen",Chaîne,Mexique,Amérique du Nord,541.65,2025-04-13,2025-05-13,2025-06-19,2025-05-18,2025-05-28,Payé,False,False,37,0.0,1.0,0.0
+H0168,Skinner PLC,Chaîne,États-Unis,Amérique du Nord,747.58,2025-06-10,2025-07-10,2025-07-23,2025-07-15,2025-07-25,En retard,False,True,13,747.58,1.0,9718.54
+H0169,Shepherd-Harvey,Indépendant,Canada,Amérique du Nord,3758.14,2025-04-03,2025-05-03,2025-04-30,2025-05-08,2025-05-18,Payé,False,False,0,0.0,1.5,0.0
+H0170,Bradshaw Inc,Chaîne,États-Unis,Amérique du Nord,3795.34,2025-05-20,2025-06-19,2025-07-22,2025-06-24,2025-07-04,En retard,False,False,33,3795.34,1.0,125246.22
+H0171,Lopez and Sons,Chaîne,Italie,Europe,1395.85,2025-03-28,2025-04-27,2025-05-10,2025-05-02,2025-05-12,Payé,False,False,13,0.0,1.0,0.0
+H0172,Walton LLC,Indépendant,Thaïlande,Asie,4129.84,2025-04-07,2025-05-07,,2025-05-12,2025-05-22,En retard,True,False,75,4129.84,1.5,464607.0
+H0173,King Inc,Indépendant,Corée du Sud,Asie,222.62,2025-06-13,2025-07-13,,2025-07-18,2025-07-28,En retard,False,True,8,222.62,1.5,2671.44
+H0174,Hernandez Ltd,Indépendant,Japon,Asie,4556.0,2025-03-24,2025-04-23,2025-05-09,2025-04-28,2025-05-08,Payé,False,False,16,0.0,1.5,0.0
+H0175,Black-Rubio,Chaîne,Allemagne,Europe,4736.68,2025-06-14,2025-07-14,2025-08-04,2025-07-19,2025-07-29,En retard,True,False,21,4736.68,1.0,99470.28
+H0176,"Hamilton, Simpson and Mcmahon",Chaîne,Allemagne,Europe,2004.36,2025-06-16,2025-07-16,2025-08-22,2025-07-21,2025-07-31,En retard,False,True,37,2004.36,1.0,74161.31999999999
+H0177,Smith-Choi,Chaîne,Mexique,Amérique du Nord,4185.1,2025-03-27,2025-04-26,2025-05-03,2025-05-01,2025-05-11,Payé,False,False,7,0.0,1.0,0.0
+H0178,"Rodriguez, Stephens and Young",Chaîne,Espagne,Europe,2272.58,2025-06-10,2025-07-10,,2025-07-15,2025-07-25,En retard,False,True,11,2272.58,1.0,24998.379999999997
+H0179,"Mooney, Brandt and Larsen",Indépendant,Thaïlande,Asie,396.7,2025-04-05,2025-05-05,2025-05-02,2025-05-10,2025-05-20,Payé,False,False,0,0.0,1.5,0.0
+H0180,"Roberson, Kane and Turner",Chaîne,États-Unis,Amérique du Nord,3244.35,2025-03-31,2025-04-30,2025-04-21,2025-05-05,2025-05-15,Payé,False,False,0,0.0,1.0,0.0
+H0181,Park PLC,Chaîne,Espagne,Europe,4945.22,2025-03-26,2025-04-25,,2025-04-30,2025-05-10,En retard,True,False,87,4945.22,1.0,430234.14
+H0182,"Snyder, Cook and Kennedy",Chaîne,Belgique,Europe,2973.28,2025-06-08,2025-07-08,,2025-07-13,2025-07-23,En retard,True,False,13,2973.28,1.0,38652.64
+H0183,Rubio-Wright,Chaîne,États-Unis,Amérique du Nord,1458.65,2025-05-07,2025-06-06,,2025-06-11,2025-06-21,En retard,True,False,45,1458.65,1.0,65639.25
+H0184,Herrera Ltd,Chaîne,Thaïlande,Asie,638.64,2025-04-09,2025-05-09,,2025-05-14,2025-05-24,En retard,True,False,73,638.64,1.0,46620.72
+H0185,"Santiago, Hill and Schmidt",Chaîne,Espagne,Europe,2985.38,2025-05-13,2025-06-12,2025-06-18,2025-06-17,2025-06-27,Payé,False,False,6,0.0,1.0,0.0
+H0186,Hernandez-Romero,Indépendant,Allemagne,Europe,2677.82,2025-06-15,2025-07-15,,2025-07-20,2025-07-30,En retard,False,False,6,2677.82,1.5,24100.380000000005
+H0187,"Phillips, Wallace and Grant",Chaîne,Mexique,Amérique du Nord,2314.83,2025-06-14,2025-07-14,2025-08-12,2025-07-19,2025-07-29,En retard,True,False,29,2314.83,1.0,67130.06999999999
+H0188,Curtis-Logan,Indépendant,Thaïlande,Asie,3252.37,2025-05-03,2025-06-02,2025-06-22,2025-06-07,2025-06-17,Payé,False,False,20,0.0,1.5,0.0
+H0189,Rodriguez PLC,Chaîne,Canada,Amérique du Nord,2502.32,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,True,False,54,2502.32,1.0,135125.28
+H0190,Young Ltd,Chaîne,Espagne,Europe,421.84,2025-05-11,2025-06-10,2025-07-10,2025-06-15,2025-06-25,Payé,False,False,30,0.0,1.0,0.0
+H0191,"Payne, Anderson and Harper",Indépendant,Thaïlande,Asie,4973.68,2025-05-29,2025-06-28,2025-07-17,2025-07-03,2025-07-13,Payé,False,False,19,0.0,1.5,0.0
+H0192,"Richards, Barber and Chapman",Chaîne,Inde,Asie,3986.17,2025-05-31,2025-06-30,2025-07-31,2025-07-05,2025-07-15,En retard,True,False,31,3986.17,1.0,123571.27
+H0193,"Smith, Chung and Sullivan",Chaîne,Canada,Amérique du Nord,2127.69,2025-06-16,2025-07-16,,2025-07-21,2025-07-31,En retard,False,False,5,2127.69,1.0,10638.45
+H0194,"Middleton, Horton and Sutton",Indépendant,Japon,Asie,2191.14,2025-06-01,2025-07-01,2025-07-14,2025-07-06,2025-07-16,Payé,False,False,13,0.0,1.5,0.0
+H0195,Gonzales and Sons,Chaîne,Italie,Europe,547.0,2025-04-21,2025-05-21,2025-06-07,2025-05-26,2025-06-05,Payé,False,False,17,0.0,1.0,0.0
+H0196,Silva Ltd,Chaîne,Espagne,Europe,2826.22,2025-03-27,2025-04-26,2025-05-21,2025-05-01,2025-05-11,Payé,False,False,25,0.0,1.0,0.0
+H0197,Norton-Contreras,Chaîne,Thaïlande,Asie,2112.96,2025-05-05,2025-06-04,,2025-06-09,2025-06-19,En retard,False,True,47,2112.96,1.0,99309.12
+H0198,Allen-Glenn,Indépendant,Mexique,Amérique du Nord,1823.07,2025-06-13,2025-07-13,2025-07-16,2025-07-18,2025-07-28,Payé,False,False,3,0.0,1.5,0.0
+H0199,Henry LLC,Chaîne,Italie,Europe,4251.65,2025-06-15,2025-07-15,2025-08-09,2025-07-20,2025-07-30,En retard,False,True,25,4251.65,1.0,106291.24999999999
+H0200,Clark PLC,Chaîne,Mexique,Amérique du Nord,4055.38,2025-06-07,2025-07-07,,2025-07-12,2025-07-22,En retard,True,False,14,4055.38,1.0,56775.32
+H0201,Wallace-Black,Chaîne,Thaïlande,Asie,984.04,2025-04-07,2025-05-07,,2025-05-12,2025-05-22,En retard,False,False,75,984.04,1.0,73803.0
+H0202,Smith PLC,Chaîne,États-Unis,Amérique du Nord,4362.33,2025-03-24,2025-04-23,2025-05-08,2025-04-28,2025-05-08,Payé,False,False,15,0.0,1.0,0.0
+H0203,"Montoya, Lawrence and Hawkins",Chaîne,Allemagne,Europe,549.61,2025-06-15,2025-07-15,2025-07-29,2025-07-20,2025-07-30,En retard,False,False,14,549.61,1.0,7694.54
+H0204,Smith-Thompson,Indépendant,États-Unis,Amérique du Nord,1627.02,2025-04-24,2025-05-24,2025-06-19,2025-05-29,2025-06-08,Payé,False,False,26,0.0,1.5,0.0
+H0205,"Patrick, Green and Andrews",Chaîne,Japon,Asie,862.34,2025-04-13,2025-05-13,,2025-05-18,2025-05-28,En retard,True,False,69,862.34,1.0,59501.46
+H0206,Garcia-Massey,Indépendant,Japon,Asie,2271.25,2025-03-29,2025-04-28,2025-05-26,2025-05-03,2025-05-13,Payé,False,False,28,0.0,1.5,0.0
+H0207,"Richards, Espinoza and Lopez",Indépendant,Canada,Amérique du Nord,1156.29,2025-06-10,2025-07-10,2025-07-22,2025-07-15,2025-07-25,En retard,False,True,12,1156.29,1.5,20813.22
+H0208,Gilbert-Pena,Indépendant,Mexique,Amérique du Nord,2681.98,2025-05-06,2025-06-05,2025-06-09,2025-06-10,2025-06-20,Payé,False,False,4,0.0,1.5,0.0
+H0209,"Evans, Daniels and Perry",Chaîne,Mexique,Amérique du Nord,137.67,2025-04-20,2025-05-20,2025-05-23,2025-05-25,2025-06-04,Payé,False,False,3,0.0,1.0,0.0
+H0210,"Davila, Scott and Young",Indépendant,Espagne,Europe,1707.8,2025-06-19,2025-07-19,2025-08-25,2025-07-24,2025-08-03,En retard,False,True,37,1707.8,1.5,94782.9
+H0211,"Shaw, Thomas and Reed",Chaîne,Italie,Europe,2551.29,2025-06-02,2025-07-02,,2025-07-07,2025-07-17,En retard,False,True,19,2551.29,1.0,48474.51
+H0212,"Benton, Reyes and Walker",Chaîne,Mexique,Amérique du Nord,2237.48,2025-06-14,2025-07-14,2025-07-08,2025-07-19,2025-07-29,Payé,False,False,0,0.0,1.0,0.0
+H0213,Dyer-Rivera,Indépendant,Mexique,Amérique du Nord,2909.66,2025-06-20,2025-07-20,,2025-07-25,2025-08-04,En retard,False,False,1,2909.66,1.5,4364.49
+H0214,Richardson-Webb,Chaîne,Italie,Europe,4834.38,2025-06-02,2025-07-02,2025-07-31,2025-07-07,2025-07-17,En retard,False,False,29,4834.38,1.0,140197.02
+H0215,Skinner Inc,Chaîne,Italie,Europe,1292.25,2025-05-18,2025-06-17,2025-07-10,2025-06-22,2025-07-02,Payé,False,False,23,0.0,1.0,0.0
+H0216,"Gonzalez, Moore and Haynes",Indépendant,Italie,Europe,3754.44,2025-05-28,2025-06-27,2025-08-05,2025-07-02,2025-07-12,En retard,True,False,39,3754.44,1.5,219634.74
+H0217,"Moore, Wong and Reid",Chaîne,Belgique,Europe,2699.96,2025-04-22,2025-05-22,2025-06-30,2025-05-27,2025-06-06,Payé,False,False,39,0.0,1.0,0.0
+H0218,Jacobs Ltd,Chaîne,Canada,Amérique du Nord,1257.72,2025-05-30,2025-06-29,2025-07-01,2025-07-04,2025-07-14,Payé,False,False,2,0.0,1.0,0.0
+H0219,Barnett and Sons,Chaîne,Belgique,Europe,3825.05,2025-05-28,2025-06-27,2025-06-28,2025-07-02,2025-07-12,Payé,False,False,1,0.0,1.0,0.0
+H0220,Vasquez-Donaldson,Indépendant,Inde,Asie,3796.78,2025-04-06,2025-05-06,,2025-05-11,2025-05-21,En retard,False,False,76,3796.78,1.5,432832.92000000004
+H0221,Brady-Osborne,Chaîne,Thaïlande,Asie,2254.84,2025-05-27,2025-06-26,2025-07-26,2025-07-01,2025-07-11,En retard,False,False,30,2254.84,1.0,67645.20000000001
+H0222,Murphy and Sons,Indépendant,Japon,Asie,2585.95,2025-05-23,2025-06-22,2025-07-10,2025-06-27,2025-07-07,Payé,False,False,18,0.0,1.5,0.0
+H0223,Ponce Ltd,Indépendant,France,Europe,4175.31,2025-06-13,2025-07-13,2025-07-08,2025-07-18,2025-07-28,Payé,False,False,0,0.0,1.5,0.0
+H0224,Medina Ltd,Indépendant,Inde,Asie,2943.61,2025-04-10,2025-05-10,,2025-05-15,2025-05-25,En retard,True,False,72,2943.61,1.5,317909.88
+H0225,Sheppard-Dalton,Chaîne,Mexique,Amérique du Nord,1675.48,2025-05-11,2025-06-10,2025-06-09,2025-06-15,2025-06-25,Payé,False,False,0,0.0,1.0,0.0
+H0226,"Hanson, Smith and Tapia",Chaîne,Italie,Europe,4073.74,2025-04-20,2025-05-20,,2025-05-25,2025-06-04,En retard,True,False,62,4073.74,1.0,252571.87999999998
+H0227,Wyatt and Sons,Chaîne,Corée du Sud,Asie,1313.94,2025-05-25,2025-06-24,2025-07-12,2025-06-29,2025-07-09,Payé,False,False,18,0.0,1.0,0.0
+H0228,"Werner, Phillips and Mcbride",Indépendant,Corée du Sud,Asie,1926.97,2025-04-01,2025-05-01,2025-05-17,2025-05-06,2025-05-16,Payé,False,False,16,0.0,1.5,0.0
+H0229,"Blevins, Harmon and Mccarthy",Chaîne,Mexique,Amérique du Nord,3967.21,2025-06-01,2025-07-01,2025-06-25,2025-07-06,2025-07-16,Payé,False,False,0,0.0,1.0,0.0
+H0230,"Miller, Moore and Lewis",Indépendant,États-Unis,Amérique du Nord,1492.32,2025-05-19,2025-06-18,,2025-06-23,2025-07-03,En retard,True,False,33,1492.32,1.5,73869.84
+H0231,"Hernandez, Adams and Anderson",Chaîne,États-Unis,Amérique du Nord,4592.06,2025-05-03,2025-06-02,2025-07-03,2025-06-07,2025-06-17,Payé,False,False,31,0.0,1.0,0.0
+H0232,Mason LLC,Chaîne,Inde,Asie,3015.7,2025-05-08,2025-06-07,,2025-06-12,2025-06-22,En retard,False,False,44,3015.7,1.0,132690.8
+H0233,Lynch-Brock,Chaîne,Thaïlande,Asie,3383.57,2025-04-18,2025-05-18,,2025-05-23,2025-06-02,En retard,True,False,64,3383.57,1.0,216548.48
+H0234,Williams Inc,Indépendant,Inde,Asie,189.33,2025-04-18,2025-05-18,2025-05-21,2025-05-23,2025-06-02,Payé,False,False,3,0.0,1.5,0.0
+H0235,Martinez and Sons,Chaîne,Canada,Amérique du Nord,1210.06,2025-05-24,2025-06-23,2025-06-17,2025-06-28,2025-07-08,Payé,False,False,0,0.0,1.0,0.0
+H0236,Robinson-Riddle,Chaîne,États-Unis,Amérique du Nord,3343.45,2025-03-24,2025-04-23,,2025-04-28,2025-05-08,En retard,True,False,89,3343.45,1.0,297567.05
+H0237,Weber-Nichols,Chaîne,Inde,Asie,895.01,2025-04-21,2025-05-21,,2025-05-26,2025-06-05,En retard,True,False,61,895.01,1.0,54595.61
+H0238,Hurley-Garrison,Chaîne,Inde,Asie,2113.21,2025-04-02,2025-05-02,2025-05-07,2025-05-07,2025-05-17,Payé,False,False,5,0.0,1.0,0.0
+H0239,"Patton, Hatfield and Kim",Indépendant,Mexique,Amérique du Nord,3786.72,2025-06-02,2025-07-02,,2025-07-07,2025-07-17,En retard,True,False,19,3786.72,1.5,107921.51999999999
+H0240,"Thornton, Miller and Vega",Indépendant,Corée du Sud,Asie,4831.42,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,True,False,54,4831.42,1.5,391345.02
+H0241,"Jackson, Wright and Willis",Indépendant,Mexique,Amérique du Nord,2362.23,2025-05-13,2025-06-12,2025-06-26,2025-06-17,2025-06-27,Payé,False,False,14,0.0,1.5,0.0
+H0242,"Hammond, Davis and Becker",Chaîne,Inde,Asie,4102.77,2025-06-10,2025-07-10,,2025-07-15,2025-07-25,En retard,True,False,11,4102.77,1.0,45130.47
+H0243,Brewer Group,Indépendant,États-Unis,Amérique du Nord,4383.17,2025-04-18,2025-05-18,2025-05-14,2025-05-23,2025-06-02,Payé,False,False,0,0.0,1.5,0.0
+H0244,Hancock-Boyd,Indépendant,Japon,Asie,510.99,2025-04-14,2025-05-14,2025-06-01,2025-05-19,2025-05-29,Payé,False,False,18,0.0,1.5,0.0
+H0245,"Robinson, Watts and Bowers",Indépendant,Corée du Sud,Asie,549.4,2025-04-07,2025-05-07,,2025-05-12,2025-05-22,En retard,False,False,75,549.4,1.5,61807.5
+H0246,Weber-Rice,Chaîne,Italie,Europe,2042.62,2025-03-27,2025-04-26,2025-05-10,2025-05-01,2025-05-11,Payé,False,False,14,0.0,1.0,0.0
+H0247,Pearson PLC,Chaîne,Espagne,Europe,238.12,2025-04-12,2025-05-12,,2025-05-17,2025-05-27,En retard,False,True,70,238.12,1.0,16668.4
+H0248,Welch LLC,Indépendant,France,Europe,4595.24,2025-06-11,2025-07-11,2025-07-09,2025-07-16,2025-07-26,Payé,False,False,0,0.0,1.5,0.0
+H0249,"Brown, Cline and Maldonado",Indépendant,Inde,Asie,3115.21,2025-04-25,2025-05-25,,2025-05-30,2025-06-09,En retard,True,False,57,3115.21,1.5,266350.455
+H0250,Buchanan-Gates,Chaîne,États-Unis,Amérique du Nord,2789.14,2025-06-15,2025-07-15,,2025-07-20,2025-07-30,En retard,False,True,6,2789.14,1.0,16734.84
+H0251,"Collins, Meyer and Thompson",Indépendant,États-Unis,Amérique du Nord,697.06,2025-06-08,2025-07-08,2025-08-07,2025-07-13,2025-07-23,En retard,False,True,30,697.06,1.5,31367.699999999997
+H0252,"Brown, Crawford and Mooney",Chaîne,Italie,Europe,3196.58,2025-05-01,2025-05-31,2025-07-05,2025-06-05,2025-06-15,Payé,False,False,35,0.0,1.0,0.0
+H0253,Rivera Inc,Indépendant,Espagne,Europe,107.67,2025-06-16,2025-07-16,2025-08-11,2025-07-21,2025-07-31,En retard,False,True,26,107.67,1.5,4199.13
+H0254,Phelps Ltd,Indépendant,Japon,Asie,431.63,2025-05-28,2025-06-27,2025-07-19,2025-07-02,2025-07-12,Payé,False,False,22,0.0,1.5,0.0
+H0255,Edwards-Trujillo,Indépendant,Japon,Asie,4379.32,2025-05-26,2025-06-25,2025-07-09,2025-06-30,2025-07-10,Payé,False,False,14,0.0,1.5,0.0
+H0256,Smith-Davis,Chaîne,Canada,Amérique du Nord,1849.76,2025-05-03,2025-06-02,2025-06-07,2025-06-07,2025-06-17,Payé,False,False,5,0.0,1.0,0.0
+H0257,"Callahan, King and Miller",Indépendant,Japon,Asie,753.71,2025-06-19,2025-07-19,2025-07-30,2025-07-24,2025-08-03,En retard,True,False,11,753.71,1.5,12436.215000000002
+H0258,Lam and Sons,Indépendant,Inde,Asie,3195.51,2025-05-19,2025-06-18,,2025-06-23,2025-07-03,En retard,True,False,33,3195.51,1.5,158177.745
+H0259,Baker and Sons,Chaîne,Inde,Asie,1537.87,2025-04-21,2025-05-21,2025-05-23,2025-05-26,2025-06-05,Payé,False,False,2,0.0,1.0,0.0
+H0260,Brown-Mcdaniel,Indépendant,Espagne,Europe,2625.38,2025-05-14,2025-06-13,,2025-06-18,2025-06-28,En retard,False,False,38,2625.38,1.5,149646.66
+H0261,Summers and Sons,Indépendant,Allemagne,Europe,1849.17,2025-03-28,2025-04-27,,2025-05-02,2025-05-12,En retard,False,False,85,1849.17,1.5,235769.17500000002
+H0262,Sweeney Ltd,Indépendant,Espagne,Europe,4458.48,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,False,False,54,4458.48,1.5,361136.88
+H0263,Perez-Lamb,Indépendant,Italie,Europe,1900.0,2025-03-25,2025-04-24,,2025-04-29,2025-05-09,En retard,False,True,88,1900.0,1.5,250800.0
+H0264,Harvey Group,Chaîne,Inde,Asie,2209.98,2025-06-02,2025-07-02,,2025-07-07,2025-07-17,En retard,True,False,19,2209.98,1.0,41989.62
+H0265,"Lloyd, Johnson and Hester",Indépendant,Thaïlande,Asie,602.73,2025-03-28,2025-04-27,2025-05-05,2025-05-02,2025-05-12,Payé,False,False,8,0.0,1.5,0.0
+H0266,Martin Ltd,Indépendant,Canada,Amérique du Nord,916.56,2025-05-16,2025-06-15,2025-07-03,2025-06-20,2025-06-30,Payé,False,False,18,0.0,1.5,0.0
+H0267,Morgan PLC,Indépendant,Espagne,Europe,1445.32,2025-06-03,2025-07-03,,2025-07-08,2025-07-18,En retard,True,False,18,1445.32,1.5,39023.64
+H0268,Singh and Sons,Indépendant,Italie,Europe,2614.12,2025-05-23,2025-06-22,,2025-06-27,2025-07-07,En retard,True,False,29,2614.12,1.5,113714.22
+H0269,Sanchez-Gates,Indépendant,Allemagne,Europe,270.51,2025-04-28,2025-05-28,2025-07-06,2025-06-02,2025-06-12,Payé,False,False,39,0.0,1.5,0.0
+H0270,Kelly and Sons,Indépendant,Thaïlande,Asie,1975.99,2025-04-03,2025-05-03,2025-05-31,2025-05-08,2025-05-18,Payé,False,False,28,0.0,1.5,0.0
+H0271,Nelson and Sons,Indépendant,Italie,Europe,1922.87,2025-04-30,2025-05-30,,2025-06-04,2025-06-14,En retard,True,False,52,1922.87,1.5,149983.86
+H0272,Robbins Ltd,Indépendant,Thaïlande,Asie,1640.49,2025-06-13,2025-07-13,2025-07-10,2025-07-18,2025-07-28,Payé,False,False,0,0.0,1.5,0.0
+H0273,"Raymond, Walsh and Duncan",Indépendant,Allemagne,Europe,2636.95,2025-06-13,2025-07-13,,2025-07-18,2025-07-28,En retard,True,False,8,2636.95,1.5,31643.399999999998
+H0274,Carr-Juarez,Indépendant,Canada,Amérique du Nord,1151.4,2025-06-04,2025-07-04,2025-08-07,2025-07-09,2025-07-19,En retard,False,True,34,1151.4,1.5,58721.40000000001
+H0275,Smith and Sons,Chaîne,Allemagne,Europe,2315.01,2025-04-26,2025-05-26,,2025-05-31,2025-06-10,En retard,False,True,56,2315.01,1.0,129640.56000000001
+H0276,"Watson, Harris and Kirby",Indépendant,Thaïlande,Asie,3576.75,2025-05-01,2025-05-31,2025-06-08,2025-06-05,2025-06-15,Payé,False,False,8,0.0,1.5,0.0
+H0277,"Potts, Hicks and Bryant",Chaîne,États-Unis,Amérique du Nord,3989.11,2025-05-16,2025-06-15,2025-06-12,2025-06-20,2025-06-30,Payé,False,False,0,0.0,1.0,0.0
+H0278,"Ibarra, Howell and Guerrero",Chaîne,Allemagne,Europe,3972.83,2025-04-08,2025-05-08,2025-06-02,2025-05-13,2025-05-23,Payé,False,False,25,0.0,1.0,0.0
+H0279,Clements-Fox,Indépendant,Thaïlande,Asie,4037.94,2025-06-08,2025-07-08,2025-08-06,2025-07-13,2025-07-23,En retard,True,False,29,4037.94,1.5,175650.38999999998
+H0280,"Nelson, Lopez and Boyle",Indépendant,Espagne,Europe,4998.02,2025-05-17,2025-06-16,,2025-06-21,2025-07-01,En retard,False,False,35,4998.02,1.5,262396.05000000005
+H0281,Clark Group,Chaîne,Japon,Asie,4864.66,2025-04-23,2025-05-23,2025-06-10,2025-05-28,2025-06-07,Payé,False,False,18,0.0,1.0,0.0
+H0282,Scott-Lambert,Indépendant,Mexique,Amérique du Nord,728.84,2025-04-12,2025-05-12,,2025-05-17,2025-05-27,En retard,True,False,70,728.84,1.5,76528.20000000001
+H0283,Russell-Oconnell,Chaîne,Italie,Europe,4173.81,2025-04-29,2025-05-29,2025-06-07,2025-06-03,2025-06-13,Payé,False,False,9,0.0,1.0,0.0
+H0284,Gillespie Ltd,Indépendant,Allemagne,Europe,4680.22,2025-06-20,2025-07-20,2025-08-12,2025-07-25,2025-08-04,En retard,False,True,23,4680.22,1.5,161467.59000000003
+H0285,"Flowers, Todd and Robinson",Indépendant,États-Unis,Amérique du Nord,713.33,2025-04-16,2025-05-16,2025-06-09,2025-05-21,2025-05-31,Payé,False,False,24,0.0,1.5,0.0
+H0286,Evans-Bryant,Chaîne,Belgique,Europe,2999.86,2025-06-13,2025-07-13,2025-07-13,2025-07-18,2025-07-28,Payé,False,False,0,0.0,1.0,0.0
+H0287,Johnson-Schultz,Chaîne,Thaïlande,Asie,4143.66,2025-05-21,2025-06-20,2025-06-12,2025-06-25,2025-07-05,Payé,False,False,0,0.0,1.0,0.0
+H0288,Baker LLC,Chaîne,Thaïlande,Asie,3858.1,2025-04-04,2025-05-04,2025-06-03,2025-05-09,2025-05-19,Payé,False,False,30,0.0,1.0,0.0
+H0289,Dominguez LLC,Indépendant,Italie,Europe,3245.35,2025-05-04,2025-06-03,2025-06-08,2025-06-08,2025-06-18,Payé,False,False,5,0.0,1.5,0.0
+H0290,Nelson and Sons,Indépendant,Inde,Asie,2322.37,2025-05-22,2025-06-21,2025-06-21,2025-06-26,2025-07-06,Payé,False,False,0,0.0,1.5,0.0
+H0291,Carroll Inc,Indépendant,Canada,Amérique du Nord,2375.77,2025-05-16,2025-06-15,2025-06-14,2025-06-20,2025-06-30,Payé,False,False,0,0.0,1.5,0.0
+H0292,Rivera Group,Indépendant,Mexique,Amérique du Nord,3697.58,2025-06-12,2025-07-12,,2025-07-17,2025-07-27,En retard,False,True,9,3697.58,1.5,49917.33
+H0293,Rasmussen and Sons,Chaîne,Mexique,Amérique du Nord,1663.67,2025-06-14,2025-07-14,2025-07-21,2025-07-19,2025-07-29,Payé,False,False,7,0.0,1.0,0.0
+H0294,"Werner, Walker and Tyler",Chaîne,États-Unis,Amérique du Nord,574.38,2025-05-28,2025-06-27,2025-07-11,2025-07-02,2025-07-12,Payé,False,False,14,0.0,1.0,0.0
+H0295,Carpenter-Mendez,Chaîne,Inde,Asie,4817.16,2025-06-13,2025-07-13,,2025-07-18,2025-07-28,En retard,False,False,8,4817.16,1.0,38537.28
+H0296,"Cardenas, Parks and Castillo",Indépendant,Allemagne,Europe,4980.25,2025-05-09,2025-06-08,2025-06-17,2025-06-13,2025-06-23,Payé,False,False,9,0.0,1.5,0.0
+H0297,Brown and Sons,Chaîne,États-Unis,Amérique du Nord,4731.64,2025-04-02,2025-05-02,2025-05-07,2025-05-07,2025-05-17,Payé,False,False,5,0.0,1.0,0.0
+H0298,Holland Ltd,Indépendant,Belgique,Europe,338.42,2025-06-17,2025-07-17,2025-08-14,2025-07-22,2025-08-01,En retard,False,False,28,338.42,1.5,14213.64
+H0299,"Mcmahon, Garcia and Pratt",Chaîne,Japon,Asie,2211.55,2025-04-08,2025-05-08,,2025-05-13,2025-05-23,En retard,False,False,74,2211.55,1.0,163654.7
+H0300,Wells-King,Indépendant,États-Unis,Amérique du Nord,350.67,2025-05-26,2025-06-25,2025-07-08,2025-06-30,2025-07-10,Payé,False,False,13,0.0,1.5,0.0
+H0301,Armstrong-Hall,Chaîne,Thaïlande,Asie,1993.11,2025-06-14,2025-07-14,2025-08-08,2025-07-19,2025-07-29,En retard,False,True,25,1993.11,1.0,49827.75
+H0302,Becker-Stevens,Indépendant,France,Europe,1928.67,2025-04-28,2025-05-28,,2025-06-02,2025-06-12,En retard,False,True,54,1928.67,1.5,156222.27000000002
+H0303,Fernandez Group,Indépendant,Belgique,Europe,2550.38,2025-05-16,2025-06-15,2025-06-13,2025-06-20,2025-06-30,Payé,False,False,0,0.0,1.5,0.0
+H0304,Barnes-Roach,Indépendant,Thaïlande,Asie,2644.73,2025-06-03,2025-07-03,2025-07-25,2025-07-08,2025-07-18,En retard,True,False,22,2644.73,1.5,87276.09
+H0305,Bailey Inc,Indépendant,Mexique,Amérique du Nord,896.26,2025-04-29,2025-05-29,,2025-06-03,2025-06-13,En retard,False,False,53,896.26,1.5,71252.67
+H0306,"Fowler, Brown and Barnett",Indépendant,Inde,Asie,2426.97,2025-03-24,2025-04-23,2025-05-04,2025-04-28,2025-05-08,Payé,False,False,11,0.0,1.5,0.0
+H0307,"Moreno, Thomas and Johnson",Indépendant,Japon,Asie,2960.14,2025-05-22,2025-06-21,,2025-06-26,2025-07-06,En retard,True,False,30,2960.14,1.5,133206.3
+H0308,Stephens-Vasquez,Indépendant,Inde,Asie,4838.65,2025-06-18,2025-07-18,,2025-07-23,2025-08-02,En retard,True,False,3,4838.65,1.5,21773.925
+H0309,Cox Group,Indépendant,Japon,Asie,935.51,2025-04-02,2025-05-02,2025-05-31,2025-05-07,2025-05-17,Payé,False,False,29,0.0,1.5,0.0
+H0310,Cohen PLC,Chaîne,États-Unis,Amérique du Nord,254.7,2025-04-07,2025-05-07,,2025-05-12,2025-05-22,En retard,True,False,75,254.7,1.0,19102.5
+H0311,"James, Love and Thomas",Indépendant,France,Europe,1637.09,2025-05-16,2025-06-15,2025-07-19,2025-06-20,2025-06-30,Payé,False,False,34,0.0,1.5,0.0
+H0312,"Walsh, Williams and Moreno",Indépendant,Italie,Europe,4376.81,2025-06-01,2025-07-01,,2025-07-06,2025-07-16,En retard,True,False,20,4376.81,1.5,131304.30000000002
+H0313,Jones LLC,Chaîne,Corée du Sud,Asie,2848.35,2025-04-26,2025-05-26,,2025-05-31,2025-06-10,En retard,False,False,56,2848.35,1.0,159507.6
+H0314,Thomas Ltd,Indépendant,États-Unis,Amérique du Nord,4569.41,2025-04-27,2025-05-27,2025-06-08,2025-06-01,2025-06-11,Payé,False,False,12,0.0,1.5,0.0
+H0315,"Baker, Gray and Perry",Indépendant,Thaïlande,Asie,1042.09,2025-04-28,2025-05-28,2025-06-22,2025-06-02,2025-06-12,Payé,False,False,25,0.0,1.5,0.0
+H0316,Brown-Stark,Indépendant,États-Unis,Amérique du Nord,3878.75,2025-05-09,2025-06-08,,2025-06-13,2025-06-23,En retard,False,False,43,3878.75,1.5,250179.375
+H0317,Benson-Vega,Indépendant,Canada,Amérique du Nord,1510.17,2025-06-07,2025-07-07,2025-07-31,2025-07-12,2025-07-22,En retard,False,False,24,1510.17,1.5,54366.12
+H0318,Liu Inc,Indépendant,États-Unis,Amérique du Nord,306.13,2025-05-09,2025-06-08,,2025-06-13,2025-06-23,En retard,True,False,43,306.13,1.5,19745.385000000002
+H0319,Gould-Mayer,Indépendant,Canada,Amérique du Nord,3761.96,2025-04-13,2025-05-13,2025-06-06,2025-05-18,2025-05-28,Payé,False,False,24,0.0,1.5,0.0
+H0320,"Baldwin, Rodriguez and Miller",Indépendant,Mexique,Amérique du Nord,772.64,2025-06-19,2025-07-19,2025-08-15,2025-07-24,2025-08-03,En retard,True,False,27,772.64,1.5,31291.92
+H0321,Guzman-Moon,Chaîne,France,Europe,3225.93,2025-05-11,2025-06-10,2025-06-26,2025-06-15,2025-06-25,Payé,False,False,16,0.0,1.0,0.0
+H0322,Thompson-Acosta,Indépendant,Mexique,Amérique du Nord,592.67,2025-05-13,2025-06-12,,2025-06-17,2025-06-27,En retard,True,False,39,592.67,1.5,34671.19499999999
+H0323,Smith PLC,Indépendant,Corée du Sud,Asie,3299.17,2025-04-22,2025-05-22,,2025-05-27,2025-06-06,En retard,False,False,60,3299.17,1.5,296925.30000000005
+H0324,"White, Young and Sanford",Indépendant,Corée du Sud,Asie,1673.72,2025-05-15,2025-06-14,2025-07-23,2025-06-19,2025-06-29,En retard,True,False,39,1673.72,1.5,97912.62
+H0325,Torres Inc,Chaîne,Corée du Sud,Asie,4574.83,2025-06-19,2025-07-19,2025-07-20,2025-07-24,2025-08-03,Payé,False,False,1,0.0,1.0,0.0
+H0326,Haas Ltd,Indépendant,Italie,Europe,1012.93,2025-04-04,2025-05-04,,2025-05-09,2025-05-19,En retard,False,True,78,1012.93,1.5,118512.81
+H0327,Miller-Peck,Chaîne,Espagne,Europe,4649.43,2025-05-16,2025-06-15,2025-07-04,2025-06-20,2025-06-30,Payé,False,False,19,0.0,1.0,0.0
+H0328,Smith-Stewart,Chaîne,Inde,Asie,4270.19,2025-06-16,2025-07-16,2025-07-18,2025-07-21,2025-07-31,Payé,False,False,2,0.0,1.0,0.0
+H0329,Santana and Sons,Chaîne,Espagne,Europe,3682.48,2025-04-28,2025-05-28,2025-07-02,2025-06-02,2025-06-12,Payé,False,False,35,0.0,1.0,0.0
+H0330,"Smith, Lambert and Freeman",Indépendant,France,Europe,3974.76,2025-04-04,2025-05-04,2025-06-11,2025-05-09,2025-05-19,Payé,False,False,38,0.0,1.5,0.0
+H0331,Anderson-White,Indépendant,Allemagne,Europe,4152.25,2025-05-25,2025-06-24,2025-06-19,2025-06-29,2025-07-09,Payé,False,False,0,0.0,1.5,0.0
+H0332,Stewart Ltd,Chaîne,Mexique,Amérique du Nord,1005.43,2025-05-19,2025-06-18,2025-06-28,2025-06-23,2025-07-03,Payé,False,False,10,0.0,1.0,0.0
+H0333,Rodriguez-Cruz,Indépendant,France,Europe,1979.51,2025-04-14,2025-05-14,2025-05-21,2025-05-19,2025-05-29,Payé,False,False,7,0.0,1.5,0.0
+H0334,Ward-Vasquez,Chaîne,Canada,Amérique du Nord,1381.61,2025-04-25,2025-05-25,2025-05-30,2025-05-30,2025-06-09,Payé,False,False,5,0.0,1.0,0.0
+H0335,Johnson-Khan,Indépendant,France,Europe,1603.35,2025-03-28,2025-04-27,2025-05-19,2025-05-02,2025-05-12,Payé,False,False,22,0.0,1.5,0.0
+H0336,Miller Group,Chaîne,Thaïlande,Asie,3229.69,2025-06-03,2025-07-03,,2025-07-08,2025-07-18,En retard,False,True,18,3229.69,1.0,58134.42
+H0337,Tapia LLC,Indépendant,Allemagne,Europe,850.61,2025-04-04,2025-05-04,,2025-05-09,2025-05-19,En retard,False,False,78,850.61,1.5,99521.37
+H0338,"Pineda, Nichols and Mosley",Chaîne,Inde,Asie,3833.11,2025-03-27,2025-04-26,2025-05-24,2025-05-01,2025-05-11,Payé,False,False,28,0.0,1.0,0.0
+H0339,"Brown, Robles and Simpson",Indépendant,Belgique,Europe,2688.05,2025-05-12,2025-06-11,2025-07-07,2025-06-16,2025-06-26,Payé,False,False,26,0.0,1.5,0.0
+H0340,Roberts Group,Chaîne,France,Europe,2906.24,2025-04-26,2025-05-26,2025-06-05,2025-05-31,2025-06-10,Payé,False,False,10,0.0,1.0,0.0
+H0341,Townsend-Fox,Chaîne,Inde,Asie,3433.45,2025-04-25,2025-05-25,,2025-05-30,2025-06-09,En retard,False,True,57,3433.45,1.0,195706.65
+H0342,Marks PLC,Chaîne,Inde,Asie,2321.82,2025-05-31,2025-06-30,2025-07-19,2025-07-05,2025-07-15,Payé,False,False,19,0.0,1.0,0.0
+H0343,Powell Group,Indépendant,Japon,Asie,3396.56,2025-06-03,2025-07-03,2025-06-24,2025-07-08,2025-07-18,Payé,False,False,0,0.0,1.5,0.0
+H0344,Hayes-Wright,Chaîne,Canada,Amérique du Nord,3754.44,2025-06-11,2025-07-11,2025-07-03,2025-07-16,2025-07-26,Payé,False,False,0,0.0,1.0,0.0
+H0345,Zimmerman Group,Chaîne,Canada,Amérique du Nord,2751.7,2025-04-25,2025-05-25,2025-05-19,2025-05-30,2025-06-09,Payé,False,False,0,0.0,1.0,0.0
+H0346,Estrada and Sons,Indépendant,États-Unis,Amérique du Nord,2103.45,2025-04-04,2025-05-04,,2025-05-09,2025-05-19,En retard,False,False,78,2103.45,1.5,246103.64999999997
+H0347,Green-Rice,Indépendant,Canada,Amérique du Nord,1940.66,2025-05-06,2025-06-05,2025-07-07,2025-06-10,2025-06-20,Payé,False,False,32,0.0,1.5,0.0
+H0348,Martinez-Nelson,Indépendant,Corée du Sud,Asie,681.3,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,False,True,79,681.3,1.5,80734.04999999999
+H0349,Chapman Group,Chaîne,Corée du Sud,Asie,3805.28,2025-04-14,2025-05-14,,2025-05-19,2025-05-29,En retard,False,False,68,3805.28,1.0,258759.04
+H0350,"Charles, Monroe and Miller",Chaîne,Inde,Asie,1312.81,2025-05-10,2025-06-09,2025-06-16,2025-06-14,2025-06-24,Payé,False,False,7,0.0,1.0,0.0
+H0351,Smith Ltd,Chaîne,France,Europe,4066.44,2025-04-23,2025-05-23,2025-07-01,2025-05-28,2025-06-07,Payé,False,False,39,0.0,1.0,0.0
+H0352,Lopez PLC,Chaîne,Allemagne,Europe,429.73,2025-05-17,2025-06-16,2025-07-04,2025-06-21,2025-07-01,Payé,False,False,18,0.0,1.0,0.0
+H0353,Burgess Ltd,Chaîne,Japon,Asie,3728.65,2025-06-12,2025-07-12,2025-07-16,2025-07-17,2025-07-27,Payé,False,False,4,0.0,1.0,0.0
+H0354,Garza-Morales,Chaîne,Corée du Sud,Asie,786.66,2025-06-19,2025-07-19,,2025-07-24,2025-08-03,En retard,True,False,2,786.66,1.0,1573.32
+H0355,"Brown, Perez and Middleton",Indépendant,Thaïlande,Asie,1260.83,2025-03-31,2025-04-30,,2025-05-05,2025-05-15,En retard,True,False,82,1260.83,1.5,155082.09
+H0356,Bates PLC,Indépendant,Canada,Amérique du Nord,398.69,2025-03-25,2025-04-24,,2025-04-29,2025-05-09,En retard,True,False,88,398.69,1.5,52627.08
+H0357,Holmes PLC,Indépendant,Inde,Asie,329.73,2025-04-26,2025-05-26,2025-06-26,2025-05-31,2025-06-10,Payé,False,False,31,0.0,1.5,0.0
+H0358,Woods-Fitzpatrick,Indépendant,Inde,Asie,3511.91,2025-03-26,2025-04-25,2025-05-04,2025-04-30,2025-05-10,Payé,False,False,9,0.0,1.5,0.0
+H0359,Mcgee and Sons,Indépendant,États-Unis,Amérique du Nord,1280.74,2025-03-24,2025-04-23,2025-05-28,2025-04-28,2025-05-08,Payé,False,False,35,0.0,1.5,0.0
+H0360,Patterson PLC,Chaîne,Italie,Europe,2855.69,2025-06-14,2025-07-14,,2025-07-19,2025-07-29,En retard,True,False,7,2855.69,1.0,19989.83
+H0361,"Jones, Wang and Morales",Indépendant,États-Unis,Amérique du Nord,1096.35,2025-03-24,2025-04-23,2025-05-11,2025-04-28,2025-05-08,Payé,False,False,18,0.0,1.5,0.0
+H0362,Maynard Inc,Chaîne,États-Unis,Amérique du Nord,352.53,2025-03-24,2025-04-23,2025-05-21,2025-04-28,2025-05-08,Payé,False,False,28,0.0,1.0,0.0
+H0363,"Johnson, Russo and Horton",Chaîne,Japon,Asie,1022.0,2025-05-22,2025-06-21,,2025-06-26,2025-07-06,En retard,True,False,30,1022.0,1.0,30660.0
+H0364,"White, Anderson and Kennedy",Indépendant,États-Unis,Amérique du Nord,1585.62,2025-04-26,2025-05-26,,2025-05-31,2025-06-10,En retard,True,False,56,1585.62,1.5,133192.08000000002
+H0365,Rivas-Cantu,Indépendant,France,Europe,4580.76,2025-05-08,2025-06-07,2025-07-12,2025-06-12,2025-06-22,Payé,False,False,35,0.0,1.5,0.0
+H0366,Dillon-Stokes,Chaîne,Italie,Europe,2805.19,2025-06-04,2025-07-04,,2025-07-09,2025-07-19,En retard,False,False,17,2805.19,1.0,47688.23
+H0367,"Pena, Lyons and Mosley",Indépendant,Thaïlande,Asie,1381.65,2025-04-15,2025-05-15,2025-06-05,2025-05-20,2025-05-30,Payé,False,False,21,0.0,1.5,0.0
+H0368,"Erickson, Woods and Ellis",Indépendant,États-Unis,Amérique du Nord,3831.98,2025-05-30,2025-06-29,2025-07-02,2025-07-04,2025-07-14,Payé,False,False,3,0.0,1.5,0.0
+H0369,"Jackson, Sanchez and Edwards",Indépendant,Canada,Amérique du Nord,324.01,2025-03-29,2025-04-28,,2025-05-03,2025-05-13,En retard,True,False,84,324.01,1.5,40825.26
+H0370,Moore PLC,Indépendant,Espagne,Europe,1546.44,2025-03-31,2025-04-30,2025-05-04,2025-05-05,2025-05-15,Payé,False,False,4,0.0,1.5,0.0
+H0371,"Knox, Moore and Anderson",Chaîne,Mexique,Amérique du Nord,2546.58,2025-06-18,2025-07-18,2025-08-20,2025-07-23,2025-08-02,En retard,False,False,33,2546.58,1.0,84037.14
+H0372,Campbell and Sons,Indépendant,Mexique,Amérique du Nord,2358.06,2025-06-18,2025-07-18,,2025-07-23,2025-08-02,En retard,False,True,3,2358.06,1.5,10611.27
+H0373,Nguyen Group,Indépendant,Belgique,Europe,1001.83,2025-04-09,2025-05-09,,2025-05-14,2025-05-24,En retard,True,False,73,1001.83,1.5,109700.385
+H0374,"Richardson, Sanchez and Stewart",Chaîne,Japon,Asie,4731.42,2025-05-11,2025-06-10,2025-07-18,2025-06-15,2025-06-25,Payé,False,False,38,0.0,1.0,0.0
+H0375,Whitney-Green,Chaîne,Italie,Europe,4228.47,2025-05-23,2025-06-22,2025-07-27,2025-06-27,2025-07-07,En retard,True,False,35,4228.47,1.0,147996.45
+H0376,"Baker, Freeman and Haynes",Indépendant,Allemagne,Europe,1928.68,2025-04-13,2025-05-13,2025-06-14,2025-05-18,2025-05-28,Payé,False,False,32,0.0,1.5,0.0
+H0377,Black and Sons,Indépendant,Inde,Asie,177.09,2025-04-08,2025-05-08,2025-05-24,2025-05-13,2025-05-23,Payé,False,False,16,0.0,1.5,0.0
+H0378,"Mitchell, Ferguson and Benson",Indépendant,France,Europe,2725.12,2025-06-01,2025-07-01,2025-07-23,2025-07-06,2025-07-16,En retard,False,True,22,2725.12,1.5,89928.95999999999
+H0379,Shelton-Johnson,Chaîne,France,Europe,1280.75,2025-05-04,2025-06-03,2025-06-09,2025-06-08,2025-06-18,Payé,False,False,6,0.0,1.0,0.0
+H0380,Taylor PLC,Indépendant,Canada,Amérique du Nord,487.19,2025-04-20,2025-05-20,,2025-05-25,2025-06-04,En retard,False,True,62,487.19,1.5,45308.67
+H0381,Norton-Calhoun,Indépendant,Corée du Sud,Asie,3451.8,2025-06-09,2025-07-09,,2025-07-14,2025-07-24,En retard,True,False,12,3451.8,1.5,62132.40000000001
+H0382,Brown-Jones,Indépendant,Italie,Europe,1948.13,2025-06-13,2025-07-13,2025-08-12,2025-07-18,2025-07-28,En retard,True,False,30,1948.13,1.5,87665.85
+H0383,Martinez LLC,Chaîne,Corée du Sud,Asie,2549.31,2025-05-30,2025-06-29,2025-08-08,2025-07-04,2025-07-14,En retard,False,True,40,2549.31,1.0,101972.4
+H0384,Young-James,Chaîne,Japon,Asie,1135.94,2025-04-03,2025-05-03,,2025-05-08,2025-05-18,En retard,False,False,79,1135.94,1.0,89739.26000000001
+H0385,Keller PLC,Indépendant,France,Europe,4506.63,2025-04-10,2025-05-10,2025-05-02,2025-05-15,2025-05-25,Payé,False,False,0,0.0,1.5,0.0
+H0386,Bradley Ltd,Chaîne,Espagne,Europe,4811.2,2025-04-26,2025-05-26,2025-07-03,2025-05-31,2025-06-10,Payé,False,False,38,0.0,1.0,0.0
+H0387,Gregory-Smith,Chaîne,Inde,Asie,1566.46,2025-03-31,2025-04-30,2025-05-26,2025-05-05,2025-05-15,Payé,False,False,26,0.0,1.0,0.0
+H0388,Smith-Perry,Indépendant,Mexique,Amérique du Nord,1980.85,2025-04-18,2025-05-18,,2025-05-23,2025-06-02,En retard,True,False,64,1980.85,1.5,190161.59999999998
+H0389,Long-Combs,Chaîne,Thaïlande,Asie,578.66,2025-03-26,2025-04-25,2025-04-19,2025-04-30,2025-05-10,Payé,False,False,0,0.0,1.0,0.0
+H0390,"Davis, Burns and Wall",Indépendant,Mexique,Amérique du Nord,4847.71,2025-05-28,2025-06-27,2025-07-27,2025-07-02,2025-07-12,En retard,False,False,30,4847.71,1.5,218146.94999999998
+H0391,Glover-Anderson,Indépendant,États-Unis,Amérique du Nord,2809.88,2025-05-14,2025-06-13,2025-06-14,2025-06-18,2025-06-28,Payé,False,False,1,0.0,1.5,0.0
+H0392,Wilson-Lopez,Chaîne,Inde,Asie,3883.62,2025-05-01,2025-05-31,2025-06-05,2025-06-05,2025-06-15,Payé,False,False,5,0.0,1.0,0.0
+H0393,Jennings-Klein,Chaîne,Japon,Asie,1413.06,2025-04-12,2025-05-12,2025-06-21,2025-05-17,2025-05-27,Payé,False,False,40,0.0,1.0,0.0
+H0394,Sellers Inc,Indépendant,Corée du Sud,Asie,1651.72,2025-05-06,2025-06-05,2025-05-26,2025-06-10,2025-06-20,Payé,False,False,0,0.0,1.5,0.0
+H0395,"Williams, Palmer and Adams",Indépendant,Canada,Amérique du Nord,3830.6,2025-04-22,2025-05-22,2025-05-17,2025-05-27,2025-06-06,Payé,False,False,0,0.0,1.5,0.0
+H0396,Miller Inc,Indépendant,Italie,Europe,2829.23,2025-05-26,2025-06-25,2025-06-21,2025-06-30,2025-07-10,Payé,False,False,0,0.0,1.5,0.0
+H0397,Gutierrez-Hess,Indépendant,France,Europe,2815.68,2025-05-18,2025-06-17,2025-07-27,2025-06-22,2025-07-02,En retard,False,False,40,2815.68,1.5,168940.8
+H0398,Russell Group,Indépendant,Espagne,Europe,2000.22,2025-05-19,2025-06-18,2025-07-13,2025-06-23,2025-07-03,Payé,False,False,25,0.0,1.5,0.0
+H0399,Mendez and Sons,Chaîne,Belgique,Europe,3458.05,2025-06-12,2025-07-12,2025-07-19,2025-07-17,2025-07-27,Payé,False,False,7,0.0,1.0,0.0
+H0400,Moore-Wilson,Indépendant,Canada,Amérique du Nord,815.08,2025-05-22,2025-06-21,2025-06-28,2025-06-26,2025-07-06,Payé,False,False,7,0.0,1.5,0.0
+H0401,Lynch LLC,Indépendant,Canada,Amérique du Nord,3935.07,2025-06-16,2025-07-16,2025-07-21,2025-07-21,2025-07-31,Payé,False,False,5,0.0,1.5,0.0
+H0402,"Robinson, Mason and Harris",Chaîne,Inde,Asie,2343.52,2025-05-15,2025-06-14,2025-06-04,2025-06-19,2025-06-29,Payé,False,False,0,0.0,1.0,0.0
+H0403,Bolton-Hudson,Indépendant,Canada,Amérique du Nord,4039.97,2025-05-31,2025-06-30,2025-07-11,2025-07-05,2025-07-15,Payé,False,False,11,0.0,1.5,0.0
+H0404,Garcia Ltd,Chaîne,Mexique,Amérique du Nord,1572.13,2025-05-15,2025-06-14,2025-07-18,2025-06-19,2025-06-29,Payé,False,False,34,0.0,1.0,0.0
+H0405,Mann-Marquez,Indépendant,Italie,Europe,970.42,2025-04-23,2025-05-23,2025-06-02,2025-05-28,2025-06-07,Payé,False,False,10,0.0,1.5,0.0
+H0406,Nelson-Bullock,Indépendant,Mexique,Amérique du Nord,4842.04,2025-05-22,2025-06-21,,2025-06-26,2025-07-06,En retard,False,False,30,4842.04,1.5,217891.80000000002
+H0407,Hudson Group,Indépendant,Canada,Amérique du Nord,658.05,2025-05-30,2025-06-29,2025-07-26,2025-07-04,2025-07-14,En retard,True,False,27,658.05,1.5,26651.024999999998
+H0408,Rodriguez-Hall,Indépendant,Japon,Asie,4720.58,2025-06-09,2025-07-09,2025-07-17,2025-07-14,2025-07-24,Payé,False,False,8,0.0,1.5,0.0
+H0409,"Martin, Smith and Howell",Indépendant,Japon,Asie,3397.59,2025-03-29,2025-04-28,2025-05-07,2025-05-03,2025-05-13,Payé,False,False,9,0.0,1.5,0.0
+H0410,"Hurley, White and Edwards",Chaîne,Espagne,Europe,3604.66,2025-04-24,2025-05-24,,2025-05-29,2025-06-08,En retard,True,False,58,3604.66,1.0,209070.28
+H0411,Martinez Ltd,Indépendant,Mexique,Amérique du Nord,2953.0,2025-04-23,2025-05-23,2025-06-26,2025-05-28,2025-06-07,Payé,False,False,34,0.0,1.5,0.0
+H0412,Villanueva-Moore,Chaîne,Mexique,Amérique du Nord,3974.53,2025-04-02,2025-05-02,2025-05-26,2025-05-07,2025-05-17,Payé,False,False,24,0.0,1.0,0.0
+H0413,"Rowe, Hutchinson and Ayala",Chaîne,Japon,Asie,3867.87,2025-06-17,2025-07-17,2025-07-29,2025-07-22,2025-08-01,En retard,True,False,12,3867.87,1.0,46414.44
+H0414,Martinez-Lucas,Indépendant,Japon,Asie,4837.37,2025-04-26,2025-05-26,2025-07-05,2025-05-31,2025-06-10,Payé,False,False,40,0.0,1.5,0.0
+H0415,Baker Ltd,Chaîne,États-Unis,Amérique du Nord,583.17,2025-06-04,2025-07-04,2025-08-10,2025-07-09,2025-07-19,En retard,True,False,37,583.17,1.0,21577.289999999997
+H0416,Richardson LLC,Indépendant,Canada,Amérique du Nord,2369.01,2025-05-28,2025-06-27,2025-07-31,2025-07-02,2025-07-12,En retard,True,False,34,2369.01,1.5,120819.51000000001
+H0417,Mason-Hartman,Indépendant,États-Unis,Amérique du Nord,612.29,2025-06-07,2025-07-07,2025-07-02,2025-07-12,2025-07-22,Payé,False,False,0,0.0,1.5,0.0
+H0418,"Collins, Barry and Nelson",Indépendant,Allemagne,Europe,1628.26,2025-05-11,2025-06-10,2025-06-13,2025-06-15,2025-06-25,Payé,False,False,3,0.0,1.5,0.0
+H0419,Flowers Inc,Indépendant,Inde,Asie,2433.2,2025-03-23,2025-04-22,2025-05-26,2025-04-27,2025-05-07,Payé,False,False,34,0.0,1.5,0.0
+H0420,Morrison Group,Chaîne,Canada,Amérique du Nord,1571.29,2025-04-24,2025-05-24,,2025-05-29,2025-06-08,En retard,True,False,58,1571.29,1.0,91134.81999999999
+H0421,Contreras PLC,Chaîne,Espagne,Europe,3417.98,2025-04-17,2025-05-17,2025-06-23,2025-05-22,2025-06-01,Payé,False,False,37,0.0,1.0,0.0
+H0422,"James, Long and Martinez",Chaîne,Belgique,Europe,2804.36,2025-03-26,2025-04-25,2025-05-12,2025-04-30,2025-05-10,Payé,False,False,17,0.0,1.0,0.0
+H0423,Clay Group,Indépendant,États-Unis,Amérique du Nord,3185.83,2025-06-10,2025-07-10,2025-08-11,2025-07-15,2025-07-25,En retard,False,False,32,3185.83,1.5,152919.84
+H0424,Haney PLC,Chaîne,Belgique,Europe,2302.92,2025-06-08,2025-07-08,2025-06-28,2025-07-13,2025-07-23,Payé,False,False,0,0.0,1.0,0.0
+H0425,"Gallegos, Simon and Robinson",Chaîne,Corée du Sud,Asie,1463.89,2025-06-15,2025-07-15,,2025-07-20,2025-07-30,En retard,True,False,6,1463.89,1.0,8783.34
+H0426,Nunez-Turner,Chaîne,Japon,Asie,1892.39,2025-05-10,2025-06-09,2025-06-06,2025-06-14,2025-06-24,Payé,False,False,0,0.0,1.0,0.0
+H0427,"Joseph, Parsons and Hill",Indépendant,Mexique,Amérique du Nord,2685.8,2025-04-27,2025-05-27,2025-06-24,2025-06-01,2025-06-11,Payé,False,False,28,0.0,1.5,0.0
+H0428,"Bishop, Lewis and Martinez",Indépendant,Mexique,Amérique du Nord,2976.32,2025-06-07,2025-07-07,2025-07-26,2025-07-12,2025-07-22,En retard,True,False,19,2976.32,1.5,84825.12
+H0429,Warren Ltd,Chaîne,Thaïlande,Asie,3393.34,2025-05-04,2025-06-03,2025-06-08,2025-06-08,2025-06-18,Payé,False,False,5,0.0,1.0,0.0
+H0430,"Williams, Andrews and Cameron",Chaîne,États-Unis,Amérique du Nord,1929.2,2025-03-28,2025-04-27,2025-05-11,2025-05-02,2025-05-12,Payé,False,False,14,0.0,1.0,0.0
+H0431,Ruiz-Adams,Chaîne,Mexique,Amérique du Nord,2916.55,2025-04-14,2025-05-14,2025-06-04,2025-05-19,2025-05-29,Payé,False,False,21,0.0,1.0,0.0
+H0432,Martinez Ltd,Chaîne,Corée du Sud,Asie,2499.25,2025-04-18,2025-05-18,2025-05-28,2025-05-23,2025-06-02,Payé,False,False,10,0.0,1.0,0.0
+H0433,"Hendrix, Thornton and Davis",Chaîne,Mexique,Amérique du Nord,4341.06,2025-05-02,2025-06-01,,2025-06-06,2025-06-16,En retard,False,True,50,4341.06,1.0,217053.00000000003
+H0434,"Stephens, Guerra and Sullivan",Indépendant,Italie,Europe,2104.76,2025-05-09,2025-06-08,2025-07-13,2025-06-13,2025-06-23,Payé,False,False,35,0.0,1.5,0.0
+H0435,"Lewis, Maldonado and Jackson",Chaîne,Canada,Amérique du Nord,505.09,2025-04-29,2025-05-29,2025-07-06,2025-06-03,2025-06-13,Payé,False,False,38,0.0,1.0,0.0
+H0436,Baird Group,Chaîne,Espagne,Europe,1446.78,2025-04-19,2025-05-19,2025-05-19,2025-05-24,2025-06-03,Payé,False,False,0,0.0,1.0,0.0
+H0437,Chaney-Mccarthy,Indépendant,Mexique,Amérique du Nord,2793.66,2025-06-08,2025-07-08,2025-07-05,2025-07-13,2025-07-23,Payé,False,False,0,0.0,1.5,0.0
+H0438,Campos-Coleman,Indépendant,Mexique,Amérique du Nord,2756.01,2025-06-16,2025-07-16,,2025-07-21,2025-07-31,En retard,False,True,5,2756.01,1.5,20670.075
+H0439,Garcia-Roy,Chaîne,États-Unis,Amérique du Nord,1558.77,2025-05-12,2025-06-11,,2025-06-16,2025-06-26,En retard,False,False,40,1558.77,1.0,62350.8
+H0440,Hill LLC,Indépendant,États-Unis,Amérique du Nord,4339.92,2025-05-15,2025-06-14,2025-06-19,2025-06-19,2025-06-29,Payé,False,False,5,0.0,1.5,0.0
+H0441,"Orozco, Cross and Riley",Indépendant,Belgique,Europe,4319.14,2025-05-11,2025-06-10,2025-06-27,2025-06-15,2025-06-25,Payé,False,False,17,0.0,1.5,0.0
+H0442,"Vincent, Bennett and Wong",Chaîne,Belgique,Europe,3945.76,2025-05-22,2025-06-21,,2025-06-26,2025-07-06,En retard,True,False,30,3945.76,1.0,118372.8
+H0443,"Martinez, Cain and Mitchell",Indépendant,Thaïlande,Asie,3024.6,2025-04-30,2025-05-30,2025-07-04,2025-06-04,2025-06-14,Payé,False,False,35,0.0,1.5,0.0
+H0444,Young-Gay,Indépendant,Canada,Amérique du Nord,4766.75,2025-04-03,2025-05-03,2025-06-05,2025-05-08,2025-05-18,Payé,False,False,33,0.0,1.5,0.0
+H0445,"Parker, Rios and Hernandez",Indépendant,Allemagne,Europe,4601.97,2025-05-10,2025-06-09,,2025-06-14,2025-06-24,En retard,True,False,42,4601.97,1.5,289924.11000000004
+H0446,Tucker-Hodges,Chaîne,Corée du Sud,Asie,816.59,2025-06-11,2025-07-11,2025-07-16,2025-07-16,2025-07-26,Payé,False,False,5,0.0,1.0,0.0
+H0447,Meadows-Case,Indépendant,Inde,Asie,796.64,2025-04-18,2025-05-18,2025-06-17,2025-05-23,2025-06-02,Payé,False,False,30,0.0,1.5,0.0
+H0448,"Ford, Wilson and Simpson",Indépendant,Canada,Amérique du Nord,470.03,2025-04-14,2025-05-14,,2025-05-19,2025-05-29,En retard,True,False,68,470.03,1.5,47943.06
+H0449,"Bowers, Fisher and Thompson",Indépendant,Mexique,Amérique du Nord,3504.05,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,False,False,80,3504.05,1.5,420486.0
+H0450,"Johnson, Pineda and Jackson",Chaîne,Mexique,Amérique du Nord,4357.65,2025-04-19,2025-05-19,,2025-05-24,2025-06-03,En retard,True,False,63,4357.65,1.0,274531.94999999995
+H0451,Holmes-Thompson,Indépendant,Inde,Asie,4265.52,2025-06-13,2025-07-13,,2025-07-18,2025-07-28,En retard,False,True,8,4265.52,1.5,51186.240000000005
+H0452,Burke Group,Indépendant,États-Unis,Amérique du Nord,1415.83,2025-05-15,2025-06-14,,2025-06-19,2025-06-29,En retard,False,True,37,1415.83,1.5,78578.565
+H0453,Dunlap and Sons,Indépendant,Inde,Asie,4481.36,2025-03-31,2025-04-30,,2025-05-05,2025-05-15,En retard,True,False,82,4481.36,1.5,551207.2799999999
+H0454,Lewis Ltd,Chaîne,Italie,Europe,708.76,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,False,False,80,708.76,1.0,56700.8
+H0455,Colon-Ho,Chaîne,Italie,Europe,4978.9,2025-04-01,2025-05-01,,2025-05-06,2025-05-16,En retard,False,True,81,4978.9,1.0,403290.89999999997
+H0456,Ritter Group,Indépendant,États-Unis,Amérique du Nord,1326.91,2025-03-26,2025-04-25,2025-05-26,2025-04-30,2025-05-10,Payé,False,False,31,0.0,1.5,0.0
+H0457,"Miller, Gonzales and Gillespie",Indépendant,France,Europe,3165.46,2025-05-10,2025-06-09,,2025-06-14,2025-06-24,En retard,True,False,42,3165.46,1.5,199423.98
+H0458,Donaldson-Gonzalez,Chaîne,Mexique,Amérique du Nord,3548.12,2025-06-15,2025-07-15,2025-08-04,2025-07-20,2025-07-30,En retard,True,False,20,3548.12,1.0,70962.4
+H0459,Matthews-Warren,Chaîne,Belgique,Europe,2645.28,2025-06-20,2025-07-20,2025-07-10,2025-07-25,2025-08-04,Payé,False,False,0,0.0,1.0,0.0
+H0460,Palmer-Smith,Chaîne,Thaïlande,Asie,4941.96,2025-05-14,2025-06-13,2025-06-11,2025-06-18,2025-06-28,Payé,False,False,0,0.0,1.0,0.0
+H0461,"Keller, Carlson and Poole",Chaîne,États-Unis,Amérique du Nord,1977.04,2025-03-31,2025-04-30,,2025-05-05,2025-05-15,En retard,True,False,82,1977.04,1.0,162117.28
+H0462,Lopez LLC,Indépendant,Espagne,Europe,4416.85,2025-05-26,2025-06-25,2025-08-03,2025-06-30,2025-07-10,En retard,True,False,39,4416.85,1.5,258385.72500000003
+H0463,Davis-Black,Chaîne,Corée du Sud,Asie,2699.49,2025-06-04,2025-07-04,2025-08-04,2025-07-09,2025-07-19,En retard,True,False,31,2699.49,1.0,83684.18999999999
+H0464,Pace-Johnson,Chaîne,Canada,Amérique du Nord,3177.59,2025-06-01,2025-07-01,2025-07-17,2025-07-06,2025-07-16,Payé,False,False,16,0.0,1.0,0.0
+H0465,Moore Inc,Chaîne,Inde,Asie,524.77,2025-06-01,2025-07-01,2025-08-08,2025-07-06,2025-07-16,En retard,True,False,38,524.77,1.0,19941.26
+H0466,"Barber, Johnson and Wright",Indépendant,Inde,Asie,4819.92,2025-06-16,2025-07-16,2025-07-14,2025-07-21,2025-07-31,Payé,False,False,0,0.0,1.5,0.0
+H0467,"Thomas, Gonzales and Smith",Chaîne,Espagne,Europe,1316.02,2025-04-28,2025-05-28,2025-07-03,2025-06-02,2025-06-12,Payé,False,False,36,0.0,1.0,0.0
+H0468,Johnson LLC,Chaîne,Thaïlande,Asie,4254.67,2025-06-07,2025-07-07,2025-07-16,2025-07-12,2025-07-22,Payé,False,False,9,0.0,1.0,0.0
+H0469,"Phillips, Parker and Mayo",Chaîne,Belgique,Europe,3764.43,2025-04-02,2025-05-02,2025-04-25,2025-05-07,2025-05-17,Payé,False,False,0,0.0,1.0,0.0
+H0470,"Walker, Wise and Green",Indépendant,Italie,Europe,652.44,2025-04-12,2025-05-12,2025-06-09,2025-05-17,2025-05-27,Payé,False,False,28,0.0,1.5,0.0
+H0471,Davis Group,Chaîne,Belgique,Europe,4935.72,2025-05-22,2025-06-21,,2025-06-26,2025-07-06,En retard,True,False,30,4935.72,1.0,148071.6
+H0472,Blair-Farley,Indépendant,Mexique,Amérique du Nord,1890.52,2025-04-04,2025-05-04,2025-06-11,2025-05-09,2025-05-19,Payé,False,False,38,0.0,1.5,0.0
+H0473,Dickerson-Brown,Chaîne,États-Unis,Amérique du Nord,2978.08,2025-05-12,2025-06-11,2025-06-14,2025-06-16,2025-06-26,Payé,False,False,3,0.0,1.0,0.0
+H0474,Brown-Riley,Indépendant,France,Europe,2582.39,2025-03-30,2025-04-29,2025-05-21,2025-05-04,2025-05-14,Payé,False,False,22,0.0,1.5,0.0
+H0475,Dunn-Williams,Indépendant,Canada,Amérique du Nord,503.9,2025-06-02,2025-07-02,2025-07-31,2025-07-07,2025-07-17,En retard,True,False,29,503.9,1.5,21919.649999999998
+H0476,Jones Group,Indépendant,États-Unis,Amérique du Nord,487.21,2025-06-03,2025-07-03,,2025-07-08,2025-07-18,En retard,True,False,18,487.21,1.5,13154.669999999998
+H0477,"Cruz, Walker and Porter",Indépendant,Thaïlande,Asie,2973.54,2025-04-10,2025-05-10,,2025-05-15,2025-05-25,En retard,True,False,72,2973.54,1.5,321142.32
+H0478,Smith-Parrish,Indépendant,Mexique,Amérique du Nord,3676.8,2025-05-27,2025-06-26,,2025-07-01,2025-07-11,En retard,True,False,25,3676.8,1.5,137880.0
+H0479,King LLC,Indépendant,France,Europe,668.33,2025-06-01,2025-07-01,2025-06-24,2025-07-06,2025-07-16,Payé,False,False,0,0.0,1.5,0.0
+H0480,"Gonzalez, Harris and Anderson",Chaîne,Mexique,Amérique du Nord,685.27,2025-05-27,2025-06-26,,2025-07-01,2025-07-11,En retard,True,False,25,685.27,1.0,17131.75
+H0481,"Johnson, James and Johnson",Indépendant,Italie,Europe,2662.73,2025-06-06,2025-07-06,,2025-07-11,2025-07-21,En retard,False,True,15,2662.73,1.5,59911.424999999996
+H0482,Moreno-Chavez,Indépendant,États-Unis,Amérique du Nord,3691.39,2025-06-20,2025-07-20,2025-07-11,2025-07-25,2025-08-04,Payé,False,False,0,0.0,1.5,0.0
+H0483,Murray-Blackburn,Indépendant,Canada,Amérique du Nord,2666.89,2025-06-09,2025-07-09,2025-08-04,2025-07-14,2025-07-24,En retard,True,False,26,2666.89,1.5,104008.70999999999
+H0484,"Lopez, Mcdonald and Wright",Indépendant,Canada,Amérique du Nord,371.65,2025-05-06,2025-06-05,,2025-06-10,2025-06-20,En retard,True,False,46,371.65,1.5,25643.85
+H0485,"Anderson, Torres and Gould",Indépendant,États-Unis,Amérique du Nord,3889.31,2025-04-26,2025-05-26,,2025-05-31,2025-06-10,En retard,True,False,56,3889.31,1.5,326702.04
+H0486,"Smith, Collins and Griffith",Chaîne,Belgique,Europe,315.79,2025-05-31,2025-06-30,,2025-07-05,2025-07-15,En retard,True,False,21,315.79,1.0,6631.59
+H0487,Lewis-Cobb,Indépendant,Italie,Europe,1976.6,2025-05-21,2025-06-20,2025-06-12,2025-06-25,2025-07-05,Payé,False,False,0,0.0,1.5,0.0
+H0488,Tucker-Davis,Chaîne,Inde,Asie,1676.83,2025-05-13,2025-06-12,2025-07-18,2025-06-17,2025-06-27,Payé,False,False,36,0.0,1.0,0.0
+H0489,Weber and Sons,Chaîne,Canada,Amérique du Nord,2900.53,2025-05-01,2025-05-31,2025-07-03,2025-06-05,2025-06-15,Payé,False,False,33,0.0,1.0,0.0
+H0490,"Martinez, Wilson and Blake",Chaîne,Allemagne,Europe,4041.26,2025-06-20,2025-07-20,,2025-07-25,2025-08-04,En retard,False,True,1,4041.26,1.0,4041.26
+H0491,"Ward, Martinez and Soto",Indépendant,Canada,Amérique du Nord,1703.77,2025-04-27,2025-05-27,2025-05-17,2025-06-01,2025-06-11,Payé,False,False,0,0.0,1.5,0.0
+H0492,Powell LLC,Indépendant,États-Unis,Amérique du Nord,2862.65,2025-06-06,2025-07-06,2025-08-04,2025-07-11,2025-07-21,En retard,True,False,29,2862.65,1.5,124525.27500000001
+H0493,Howard and Sons,Indépendant,Canada,Amérique du Nord,4989.16,2025-05-30,2025-06-29,,2025-07-04,2025-07-14,En retard,True,False,22,4989.16,1.5,164642.27999999997
+H0494,"Baird, Conner and Garrett",Indépendant,France,Europe,217.16,2025-06-19,2025-07-19,2025-08-18,2025-07-24,2025-08-03,En retard,True,False,30,217.16,1.5,9772.2
+H0495,Johnson-Bowen,Indépendant,États-Unis,Amérique du Nord,4260.13,2025-05-10,2025-06-09,,2025-06-14,2025-06-24,En retard,True,False,42,4260.13,1.5,268388.19
+H0496,"Francis, Barton and Collins",Chaîne,Belgique,Europe,2157.1,2025-04-02,2025-05-02,,2025-05-07,2025-05-17,En retard,True,False,80,2157.1,1.0,172568.0
+H0497,"Reed, Logan and Trujillo",Chaîne,Thaïlande,Asie,315.11,2025-05-30,2025-06-29,2025-07-22,2025-07-04,2025-07-14,En retard,False,False,23,315.11,1.0,7247.530000000001
+H0498,Bright and Sons,Chaîne,Mexique,Amérique du Nord,2945.78,2025-04-22,2025-05-22,2025-06-21,2025-05-27,2025-06-06,Payé,False,False,30,0.0,1.0,0.0
+H0499,Weaver-Carroll,Chaîne,États-Unis,Amérique du Nord,2231.42,2025-06-06,2025-07-06,,2025-07-11,2025-07-21,En retard,True,False,15,2231.42,1.0,33471.3
+H0500,"Blackwell, Santos and Simpson",Indépendant,Canada,Amérique du Nord,4637.61,2025-04-26,2025-05-26,2025-07-02,2025-05-31,2025-06-10,Payé,False,False,37,0.0,1.5,0.0
