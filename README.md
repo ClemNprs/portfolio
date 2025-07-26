@@ -1,6 +1,4 @@
-# Portfolio Power BI
 
-Bienvenue sur mon portfolio de rapports Power BI interactifs.
 
 ## À propos
 
