@@ -1,0 +1,11 @@
+Rapport météo:
+
+[voir le rapport](https://app.powerbi.com/view?r=eyJrIjoiNzM2ZTRmNzMtMDk5Mi00YTVmLWEwMDItZTk5YjMxZDZkNTdmIiwidCI6ImY2NzVhOGQwLTYyNDgtNDk1ZS04MzM0LTA4YjYyNmE5ZmM0MCJ9)
+
+
+Rapport manufacturer:
+[voir le rapport](https://app.powerbi.com/view?r=eyJrIjoiZTM5OGMyZjQtYmMwYi00MGVkLWI5MjYtOWM0YzZjYzdhN2M5IiwidCI6ImY2NzVhOGQwLTYyNDgtNDk1ZS04MzM0LTA4YjYyNmE5ZmM0MCJ9)
+
+
+Gestion hôtel:
+[voir le rapport](https://app.powerbi.com/view?r=eyJrIjoiNjBiZDcyNGEtZWM5Zi00NjQ2LWFiZTEtM2QwMzRlNmQ1ZGZkIiwidCI6ImY2NzVhOGQwLTYyNDgtNDk1ZS04MzM0LTA4YjYyNmE5ZmM0MCJ9)
