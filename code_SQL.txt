@@ -1,0 +1,358 @@
+BEGIN;
+
+-- ==============================
+-- 0) Schéma et search_path
+-- ==============================
+CREATE SCHEMA IF NOT EXISTS paie;
+SET search_path TO paie, public;
+
+-- ==============================
+-- 1) Tables RAW (toutes colonnes en TEXT pour import CSV sans douleur)
+-- ==============================
+
+-- Référentiel salariés
+CREATE TABLE IF NOT EXISTS raw_ref_salaries (
+  matricule    TEXT,
+  nom          TEXT,
+  prenom       TEXT,
+  iban         TEXT,
+  centre_cout  TEXT,
+  site         TEXT
+);
+
+-- Paie “finale” (ta sortie ok_final.csv)
+CREATE TABLE IF NOT EXISTS raw_ok_final (
+  periode            TEXT,
+  matricule          TEXT,
+  nom                TEXT,
+  prenom             TEXT,
+  emploi             TEXT,
+  site               TEXT,
+  centre_cout        TEXT,
+  type_contrat       TEXT,
+  date_entree        TEXT,
+  date_sortie        TEXT,
+  temps_travail_pct  TEXT,
+  salaire_base       TEXT,
+  primes             TEXT,
+  heures_sup         TEXT,
+  retenues           TEXT,
+  iban               TEXT,
+  bic                TEXT,
+  montant_heures_sup TEXT,
+  brut               TEXT,
+  charges_patronales TEXT,
+  net_a_payer        TEXT,
+  isMatriculeOK      TEXT,
+  isIbanFmtOK        TEXT,
+  isSalaireOK        TEXT,
+  isHeuresOK         TEXT,
+  key_dedup          TEXT
+);
+
+-- Rejets (out_rejets.csv)
+CREATE TABLE IF NOT EXISTS raw_out_rejets (
+  periode      TEXT,
+  matricule    TEXT,
+  centre_cout  TEXT,
+  salaire_base TEXT,
+  heures_sup   TEXT,
+  iban         TEXT,
+  key_dedup    TEXT,
+  rule_id      TEXT,
+  rule_msg     TEXT
+);
+
+-- KPI d’exécution (kpi_execution.csv)
+CREATE TABLE IF NOT EXISTS raw_kpi_execution (
+  etape     TEXT,
+  nb_lignes TEXT,
+  moment    TEXT
+);
+
+-- ==============================
+-- 2) Vues “propres” typées
+-- ==============================
+
+-- Casts utiles : on convertit les champs numériques/dates
+CREATE OR REPLACE VIEW paie.v_ref_salaries AS
+SELECT
+  TRIM(matricule)   AS matricule,
+  TRIM(nom)         AS nom,
+  TRIM(prenom)      AS prenom,
+  TRIM(iban)        AS iban,
+  TRIM(centre_cout) AS centre_cout,
+  TRIM(site)        AS site
+FROM paie.raw_ref_salaries
+WHERE LOWER(TRIM(matricule)) <> 'matricule';   -- filtre la ligne d’en-tête importée
+
+CREATE OR REPLACE VIEW paie.v_ok_final AS
+SELECT
+  TRIM(periode)                                    AS periode,
+  TRIM(matricule)                                  AS matricule,
+  TRIM(nom)                                        AS nom,
+  TRIM(prenom)                                     AS prenom,
+  TRIM(emploi)                                     AS emploi,
+  TRIM(site)                                       AS site,
+  TRIM(centre_cout)                                AS centre_cout,
+  TRIM(type_contrat)                               AS type_contrat,
+  NULLIF(TRIM(date_entree),'')::date               AS date_entree,
+  NULLIF(TRIM(date_sortie),'')::date               AS date_sortie,
+  NULLIF(REPLACE(TRIM(temps_travail_pct), ',', '.'),'')::numeric AS temps_travail_pct,
+  NULLIF(REPLACE(TRIM(salaire_base),       ',', '.'),'')::numeric AS salaire_base,
+  NULLIF(REPLACE(TRIM(primes),             ',', '.'),'')::numeric AS primes,
+  NULLIF(REPLACE(TRIM(heures_sup),         ',', '.'),'')::numeric AS heures_sup,
+  NULLIF(REPLACE(TRIM(retenues),           ',', '.'),'')::numeric AS retenues,
+  TRIM(iban)                                      AS iban,
+  TRIM(bic)                                       AS bic,
+  NULLIF(REPLACE(TRIM(montant_heures_sup), ',', '.'),'')::numeric AS montant_heures_sup,
+  NULLIF(REPLACE(TRIM(brut),               ',', '.'),'')::numeric AS brut,
+  NULLIF(REPLACE(TRIM(charges_patronales), ',', '.'),'')::numeric AS charges_patronales,
+  NULLIF(REPLACE(TRIM(net_a_payer),        ',', '.'),'')::numeric AS net_a_payer,
+  CASE WHEN LOWER(TRIM(isMatriculeOK))='true'  THEN true
+       WHEN LOWER(TRIM(isMatriculeOK))='false' THEN false END AS isMatriculeOK,
+  CASE WHEN LOWER(TRIM(isIbanFmtOK))='true'  THEN true
+       WHEN LOWER(TRIM(isIbanFmtOK))='false' THEN false END AS isIbanFmtOK,
+  CASE WHEN LOWER(TRIM(isSalaireOK))='true'  THEN true
+       WHEN LOWER(TRIM(isSalaireOK))='false' THEN false END AS isSalaireOK,
+  CASE WHEN LOWER(TRIM(isHeuresOK))='true'  THEN true
+       WHEN LOWER(TRIM(isHeuresOK))='false' THEN false END AS isHeuresOK,
+  TRIM(key_dedup)                                 AS key_dedup
+FROM paie.raw_ok_final
+WHERE LOWER(TRIM(periode)) <> 'periode';    
+
+CREATE OR REPLACE VIEW v_out_rejets AS
+SELECT
+  TRIM(periode)                               AS periode,
+  TRIM(matricule)                             AS matricule,
+  TRIM(centre_cout)                           AS centre_cout,
+  NULLIF(TRIM(salaire_base),'')::numeric      AS salaire_base,
+  NULLIF(TRIM(heures_sup),'')::numeric        AS heures_sup,
+  TRIM(iban)                                  AS iban,
+  TRIM(key_dedup)                             AS key_dedup,
+  TRIM(rule_id)                               AS rule_id,
+  TRIM(rule_msg)                              AS rule_msg
+FROM raw_out_rejets;
+
+CREATE OR REPLACE VIEW v_kpi_execution AS
+SELECT
+  TRIM(etape) AS etape,
+  NULLIF(TRIM(nb_lignes),'')::int AS nb_lignes,
+  NULLIF(TRIM(moment),'')::timestamp AS moment
+FROM raw_kpi_execution;
+
+-- ==============================
+-- 3) Vues d’audit / KPI (non redondantes avec l’ETL)
+--    >>> filtre de période à appliquer au SELECT appelant
+-- ==============================
+
+-- A) Non payés : cartésianise ref × mois, puis anti-join
+CREATE OR REPLACE VIEW paie.vw_non_payes AS
+WITH mois AS (
+  SELECT DISTINCT periode FROM paie.v_ok_final WHERE periode IS NOT NULL
+),
+ref_x_mois AS (
+  SELECT r.matricule, r.nom, r.prenom, r.site, r.centre_cout, m.periode
+  FROM paie.v_ref_salaries r
+  CROSS JOIN mois m
+)
+SELECT rxm.*
+FROM ref_x_mois rxm
+LEFT JOIN paie.v_ok_final p
+  ON p.matricule = rxm.matricule AND p.periode = rxm.periode
+WHERE p.matricule IS NULL;
+
+-- B) IBAN partagés
+CREATE OR REPLACE VIEW paie.vw_ibans_partages AS
+WITH base AS (
+  SELECT periode, matricule, iban, net_a_payer
+  FROM paie.v_ok_final
+  WHERE iban IS NOT NULL AND iban <> ''
+),
+g AS (
+  SELECT periode, iban, COUNT(DISTINCT matricule) AS nb_matricules
+  FROM base
+  GROUP BY periode, iban
+  HAVING COUNT(DISTINCT matricule) > 1
+)
+SELECT g.periode, g.iban, g.nb_matricules,
+       STRING_AGG(b.matricule, ', ' ORDER BY b.matricule) AS matricules,
+       SUM(b.net_a_payer) AS total_vire
+FROM g
+JOIN base b ON b.periode = g.periode AND b.iban = g.iban
+GROUP BY g.periode, g.iban, g.nb_matricules;
+
+-- C) Sauts de salaire > 30 %
+CREATE OR REPLACE VIEW paie.vw_sauts_salaire AS
+WITH b AS (
+  SELECT matricule, periode, net_a_payer,
+         LAG(net_a_payer) OVER (PARTITION BY matricule ORDER BY periode) AS net_prev,
+         LAG(periode)      OVER (PARTITION BY matricule ORDER BY periode) AS periode_prev
+  FROM paie.v_ok_final
+),
+d AS (
+  SELECT *, CASE WHEN net_prev > 0 THEN (net_a_payer - net_prev) / net_prev::numeric END AS var_pct
+  FROM b WHERE net_prev IS NOT NULL
+)
+SELECT matricule, periode_prev, net_prev, periode, net_a_payer,
+       ROUND(100*var_pct, 1) AS variation_pct
+FROM d
+WHERE ABS(var_pct) >= 0.30;
+
+-- D) Taux d’heures sup par centre de coût
+CREATE OR REPLACE VIEW paie.vw_taux_heures_sup AS
+SELECT periode,
+       centre_cout,
+       SUM(heures_sup)   AS heures_sup_totales,
+       SUM(salaire_base) AS sal_base_total,
+       SUM(net_a_payer)  AS net_total,
+       CASE WHEN SUM(salaire_base) > 0
+            THEN ROUND(100 * SUM(heures_sup) / SUM(salaire_base)::numeric, 2)
+            ELSE NULL END AS taux_heures_sup_vs_base_pct
+FROM paie.v_ok_final
+GROUP BY periode, centre_cout;
+
+-- ==============================
+-- 4) (Optionnel) Index pour accélérer les vues
+-- ==============================
+CREATE INDEX IF NOT EXISTS idx_raw_ok_final_mois ON raw_ok_final (periode, matricule, iban, centre_cout);
+CREATE INDEX IF NOT EXISTS idx_raw_ref_salaries_matricule ON raw_ref_salaries (matricule);
+
+
+
+
+
+
+-- A — y a-t-il des "non payés" par période ?
+SELECT periode, COUNT(*) AS nb_non_payes
+FROM paie.vw_non_payes
+GROUP BY periode
+ORDER BY periode;
+
+-- Effectif payé par période
+SELECT periode, COUNT(*) AS nb_payes
+FROM paie.v_ok_final
+GROUP BY periode
+ORDER BY periode;
+
+-- Détail des "non payés" sur 2025-02  (changer la période si besoin)
+SELECT *
+FROM paie.vw_non_payes
+WHERE periode = '2025-02'
+ORDER BY matricule;
+
+-- Détail des "non payés" sur 2025-04
+SELECT *
+FROM paie.vw_non_payes
+WHERE periode = '2025-04'
+ORDER BY matricule;
+
+
+
+
+
+CREATE OR REPLACE VIEW paie.vw_kpi_mensuel AS
+WITH mois AS (
+  SELECT DISTINCT periode
+  FROM paie.v_ok_final
+  WHERE periode IS NOT NULL
+),
+
+-- 1) KPIs de paie (réalisé)
+paie_aggr AS (
+  SELECT
+    periode,
+    COUNT(DISTINCT matricule) 	AS nb_payes,
+    SUM(salaire_base) 			AS salaire_base_total,
+    SUM(heures_sup) 			AS heures_sup_total,
+    SUM(net_a_payer)            AS masse_net,
+    CASE
+      WHEN SUM(salaire_base) > 0
+      THEN ROUND(100 * SUM(heures_sup) / SUM(salaire_base)::numeric, 2)
+      ELSE NULL
+    END                                               AS taux_hsup_vs_base_pct,
+    ROUND(AVG(NULLIF(net_a_payer,0)), 2)              AS net_moyen
+  FROM paie.v_ok_final
+  GROUP BY periode
+),
+
+-- 2) Non payés (attendus au référentiel mais absents de la paie)
+non_payes AS (
+  SELECT
+    m.periode,
+    COUNT(*) AS nb_non_payes
+  FROM mois m
+  CROSS JOIN paie.v_ref_salaries r
+  LEFT JOIN paie.v_ok_final p
+    ON p.periode = m.periode AND p.matricule = r.matricule
+  WHERE p.matricule IS NULL
+  GROUP BY m.periode
+),
+
+-- 3) Payés hors référentiel (présents en paie mais pas dans le référentiel)
+payes_hors_ref AS (
+  SELECT
+    p.periode,
+    COUNT(DISTINCT p.matricule) AS nb_payes_hors_ref
+  FROM paie.v_ok_final p
+  LEFT JOIN paie.v_ref_salaries r ON r.matricule = p.matricule
+  WHERE r.matricule IS NULL
+  GROUP BY p.periode
+),
+
+-- 4) IBAN partagés (≥ 2 matricules pour le même IBAN sur le même mois)
+ibans_partages AS (
+  SELECT
+    periode,
+    COUNT(*) AS nb_ibans_partages
+  FROM (
+    SELECT periode, iban
+    FROM paie.v_ok_final
+    WHERE COALESCE(iban,'') <> ''
+    GROUP BY periode, iban
+    HAVING COUNT(DISTINCT matricule) > 1
+  ) g
+  GROUP BY periode
+),
+
+-- 5) Mismatch référentiel vs paie (site / centre de coût différents)
+mismatch_ref AS (
+  SELECT
+    p.periode,
+    COUNT(DISTINCT p.matricule) AS nb_mismatch_ref
+  FROM paie.v_ok_final p
+  JOIN paie.v_ref_salaries r USING (matricule)
+  WHERE (NULLIF(r.site,'')        IS DISTINCT FROM NULLIF(p.site,''))
+     OR (NULLIF(r.centre_cout,'') IS DISTINCT FROM NULLIF(p.centre_cout,''))
+  GROUP BY p.periode
+)
+
+SELECT
+  m.periode,
+  COALESCE(p.nb_payes, 0)                     AS nb_payes,
+  COALESCE(p.salaire_base_total, 0)           AS salaire_base_total,
+  COALESCE(p.heures_sup_total, 0)             AS heures_sup_total,
+  COALESCE(p.taux_hsup_vs_base_pct, 0)        AS taux_hsup_vs_base_pct,
+  COALESCE(p.masse_net, 0)                    AS masse_net,
+  COALESCE(p.net_moyen, 0)                    AS net_moyen,
+  COALESCE(n.nb_non_payes, 0)                 AS nb_non_payes,
+  COALESCE(h.nb_payes_hors_ref, 0)            AS nb_payes_hors_ref,
+  COALESCE(i.nb_ibans_partages, 0)            AS nb_ibans_partages,
+  COALESCE(mm.nb_mismatch_ref, 0)             AS nb_mismatch_ref
+FROM mois m
+LEFT JOIN paie_aggr       p  USING (periode)
+LEFT JOIN non_payes       n  USING (periode)
+LEFT JOIN payes_hors_ref  h  USING (periode)
+LEFT JOIN ibans_partages  i  USING (periode)
+LEFT JOIN mismatch_ref    mm USING (periode)
+ORDER BY m.periode;
+
+
+-- Tout voir
+SELECT * FROM paie.vw_kpi_mensuel;
+
+-- Un mois en particulier
+SELECT * FROM paie.vw_kpi_mensuel WHERE periode = '2025-03';
+
+
+
