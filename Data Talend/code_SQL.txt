@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS raw_ref_salaries (
   site         TEXT
 );
 
--- Paie “finale” (ta sortie ok_final.csv)
+-- Paie “finale” (sortie ok_final.csv)
 CREATE TABLE IF NOT EXISTS raw_ok_final (
   periode            TEXT,
   matricule          TEXT,
@@ -212,13 +212,6 @@ SELECT periode,
 FROM paie.v_ok_final
 GROUP BY periode, centre_cout;
 
--- ==============================
--- 4) (Optionnel) Index pour accélérer les vues
--- ==============================
-CREATE INDEX IF NOT EXISTS idx_raw_ok_final_mois ON raw_ok_final (periode, matricule, iban, centre_cout);
-CREATE INDEX IF NOT EXISTS idx_raw_ref_salaries_matricule ON raw_ref_salaries (matricule);
-
-
 
 
 
@@ -353,6 +346,7 @@ SELECT * FROM paie.vw_kpi_mensuel;
 
 -- Un mois en particulier
 SELECT * FROM paie.vw_kpi_mensuel WHERE periode = '2025-03';
+
 
 
 
