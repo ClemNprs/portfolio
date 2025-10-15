@@ -9,7 +9,7 @@ FROM world_layoffs.layoffs;
 
 
 
--- La première chose à faire est de créer une table de staging. C’est celle sur laquelle nous allons travailler et nettoyer les données. Nous voulons garder une table avec les données brutes au cas où quelque chose arriverait
+-- La première chose à faire est de créer une table de staging. C’est celle sur laquelle nous allons travailler et nettoyer les données. Nous voulons garder une table avec les données brutes
 CREATE TABLE world_layoffs.layoffs_staging 
 LIKE world_layoffs.layoffs;
 
@@ -76,7 +76,7 @@ WHERE
 
 -- Ce sont ceux que nous voulons supprimer lorsque le numéro de ligne est > 1 ou essentiellement ≥ 2
 
--- Vous pouvez maintenant l’écrire comme ceci :
+-- comme ceci :
 WITH DELETE_CTE AS 
 (
 SELECT *
